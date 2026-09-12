@@ -2,19 +2,286 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#070f0c" />
     <meta name="description" content="مجوهرات الأقصى بالإخصاص - لبيع وشراء الذهب والمجوهرات. أجود أنواع الذهب عيار 21. كوبرى غمازه الكبري، منزل الحاج يحى أبو قشطة." />
     <meta name="keywords" content="مجوهرات, ذهب, 21 قيراط, مجوهرات الأقصى, خواتم ذهب, أساور ذهب, حلق ذهب" />
     <meta name="author" content="مجوهرات الأقصى" />
     <meta property="og:title" content="مجوهرات الأقصى - لبيع وشراء الذهب والمجوهرات" />
     <meta property="og:description" content="أرقى المجوهرات الذهبية بأجود عيارات الذهب 21 قيراط" />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/logo.png" />
     <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
     <title>مجوهرات الأقصى - لبيع وشراء الذهب والمجوهرات</title>
-    <script type="module" crossorigin src="./assets/index-D3Yrvr-I.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Cxpe5T3B.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/site.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <a class="skip" href="#collection">تخطي إلى المجموعة</a>
+
+    <div class="intro" id="intro" aria-hidden="true">
+      <img src="./images/logo.png" alt="" />
+    </div>
+
+    <header class="nav" id="nav">
+      <a class="brand" href="#top">
+        <img src="./images/logo.png" alt="شعار مجوهرات الأقصى" />
+        <span>الأقصى</span>
+      </a>
+      <nav class="nav-links" aria-label="التنقل الرئيسي">
+        <button data-go="about">من نحن</button>
+        <button data-go="collection">المجموعة</button>
+        <button data-go="branches">فروعنا</button>
+        <button data-go="contact">تواصل</button>
+        <a href="https://www.facebook.com/mokhtarewis73m/" target="_blank" rel="noopener noreferrer">فيسبوك</a>
+      </nav>
+      <button class="nav-toggle" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span>
+      </button>
+    </header>
+
+    <div class="drawer" id="drawer">
+      <button data-go="about">من نحن</button>
+      <button data-go="collection">المجموعة</button>
+      <button data-go="branches">فروعنا</button>
+      <button data-go="contact">تواصل معنا</button>
+      <a href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">واتساب</a>
+      <a href="https://www.facebook.com/mokhtarewis73m/" target="_blank" rel="noopener noreferrer">فيسبوك</a>
+    </div>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media">
+          <img src="./images/hero-bg.jpeg" alt="" />
+          <div class="hero-shade"></div>
+        </div>
+        <div class="hero-frame"></div>
+        <div class="hero-copy">
+          <img class="hero-logo" src="./images/logo.png" alt="مجوهرات الأقصى" />
+          <p class="eyebrow">ذهب عيار ٢١ قيراط</p>
+          <h1 class="gold-text">
+            <span>مجوهرات</span>
+            <span>الأقصى</span>
+          </h1>
+          <p class="lede">رقي وأناقة في كل قطعة ذهبية. صناعة حرفية تُورث من جيل إلى جيل.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#collection">تصفح المجموعة</a>
+            <a class="btn btn-ghost" href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">تواصل واتساب</a>
+          </div>
+          <div class="scroll-hint">
+            <span>اسحب للأسفل</span>
+            <i></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="poster">
+          <img src="./images/hero-banner.jpeg" alt="تشكيلة مجوهرات الأقصى الذهبية" />
+        </div>
+      </section>
+
+      <section class="section" id="collection">
+        <div class="section-head">
+          <h2 class="gold-text">المجموعة</h2>
+          <span class="kicker">١١ قطعة</span>
+        </div>
+        <div class="products">
+          <article class="product">
+            <div class="product-photo"><img src="./images/product1.png" alt="إسورة ذهبية منقوشة" /></div>
+            <div class="product-meta">
+              <h3>إسورة ذهبية منقوشة</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%A5%D8%B3%D9%88%D8%B1%D8%A9%20%D8%B0%D9%87%D8%A8%D9%8A%D8%A9%20%D9%85%D9%86%D9%82%D9%88%D8%B4%D8%A9" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-photo"><img src="./images/product2.png" alt="خاتم ذهبي فاخر" /></div>
+            <div class="product-meta">
+              <h3>خاتم ذهبي فاخر</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%AE%D8%A7%D8%AA%D9%85%20%D8%B0%D9%87%D8%A8%D9%8A%20%D9%81%D8%A7%D8%AE%D8%B1" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-photo"><img src="./images/product3.png" alt="خاتم منقوش يدوياً" /></div>
+            <div class="product-meta">
+              <h3>خاتم منقوش يدوياً</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%AE%D8%A7%D8%AA%D9%85%20%D9%85%D9%86%D9%82%D9%88%D8%B4%20%D9%8A%D8%AF%D9%88%D9%8A%D8%A7%D9%8B" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-photo"><img src="./images/product4.png" alt="خاتم دائري مطرز" /></div>
+            <div class="product-meta">
+              <h3>خاتم دائري مطرز</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%AE%D8%A7%D8%AA%D9%85%20%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A%20%D9%85%D8%B7%D8%B1%D8%B2" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-photo"><img src="./images/product5.png" alt="خاتم زهرة ذهبية" /></div>
+            <div class="product-meta">
+              <h3>خاتم زهرة ذهبية</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%AE%D8%A7%D8%AA%D9%85%20%D8%B2%D9%87%D8%B1%D8%A9%20%D8%B0%D9%87%D8%A8%D9%8A%D8%A9" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-photo"><img src="./images/product6.png" alt="حلق ذهبي قطرة" /></div>
+            <div class="product-meta">
+              <h3>حلق ذهبي قطرة</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%AD%D9%84%D9%82%20%D8%B0%D9%87%D8%A8%D9%8A%20%D9%82%D8%B7%D8%B1%D8%A9" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-photo"><img src="./images/product7.png" alt="حلق طاووس ذهبي" /></div>
+            <div class="product-meta">
+              <h3>حلق طاووس ذهبي</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%AD%D9%84%D9%82%20%D8%B7%D8%A7%D9%88%D9%88%D8%B3%20%D8%B0%D9%87%D8%A8%D9%8A" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-photo"><img src="./images/product8.png" alt="تعليقة هلال ذهبية" /></div>
+            <div class="product-meta">
+              <h3>تعليقة هلال ذهبية</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%AA%D8%B9%D9%84%D9%8A%D9%82%D8%A9%20%D9%87%D9%84%D8%A7%D9%84%20%D8%B0%D9%87%D8%A8%D9%8A%D8%A9" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-photo"><img src="./images/product9.png" alt="حلق نقوش عربية" /></div>
+            <div class="product-meta">
+              <h3>حلق نقوش عربية</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%AD%D9%84%D9%82%20%D9%86%D9%82%D9%88%D8%B4%20%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-photo"><img src="./images/product10.jpeg" alt="تعليقة فاخرة ٢١ قيراط" /></div>
+            <div class="product-meta">
+              <h3>تعليقة فاخرة ٢١ قيراط</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%AA%D8%B9%D9%84%D9%8A%D9%82%D8%A9%20%D9%81%D8%A7%D8%AE%D8%B1%D8%A9%20%D9%A2%D9%A1%20%D9%82%D9%8A%D8%B1%D8%A7%D8%B7" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-photo"><img src="./images/product11.jpeg" alt="تعليقة دائرية مطرزة" /></div>
+            <div class="product-meta">
+              <h3>تعليقة دائرية مطرزة</h3>
+              <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80:%20%D8%AA%D8%B9%D9%84%D9%8A%D9%82%D8%A9%20%D8%AF%D8%A7%D8%A6%D8%B1%D9%8A%D8%A9%20%D9%85%D8%B7%D8%B1%D8%B2%D8%A9" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="split">
+          <div class="lifestyle-shot">
+            <img src="./images/lifestyle-hands.png" alt="أناقة المجوهرات الذهبية" />
+          </div>
+          <div class="block">
+            <h2 class="gold-text">لمسة من الأناقة</h2>
+            <p>كل قطعة من مجوهرات الأقصى تروي قصة فريدة من الحرفية والجمال. نصنع الذهب ليس مجرد حلي، بل إرث يُورث من جيل لجيل.</p>
+            <p>اختاري القطعة التي تعبر عن ذوقك، وارتديها بثقة تليق بك.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="split reverse">
+          <div class="block">
+            <h2 class="gold-text">صُنع بدون مساومة</h2>
+            <p>كل قطعة ذهبية تُصنع بأيدي حرفية — لا خطوط إنتاج، لا مصانع. المادة تُختار أولاً، والشكل يتبع طبيعتها. نعمل بالذهب الخالص عيار ٢١ قيراط.</p>
+            <p>مجوهرات الأقصى موجودة لأولئك الذين يرتدون المجوهرات التي تعني شيئاً. ليست زينة — بل إعلان. قطعة واحدة في المرة، صُنعت لتدوم مدى الحياة.</p>
+            <a class="btn btn-ghost" href="#collection">عرض المجموعة</a>
+            <div class="stats">
+              <div class="stat"><b class="gold-text">١٠٠٪</b><span>ذهب خالص</span></div>
+              <div class="stat"><b class="gold-text">١٤–٩٢</b><span>جرام للقطعة</span></div>
+              <div class="stat"><b class="gold-text">ضمان</b><span>مدى الحياة</span></div>
+            </div>
+          </div>
+          <img src="./images/workshop.png" alt="ورشة صناعة الذهب" />
+        </div>
+      </section>
+
+      <section class="section" id="branches">
+        <div class="center">
+          <h2 class="gold-text">فروعنا</h2>
+          <p>نحن متواجدون في مواقع متميزة لنكون قريبين منك</p>
+        </div>
+        <div class="branches">
+          <article class="branch">
+            <h3 class="gold-text">الفرع الأول</h3>
+            <p>كوبري غمازة الكبري الإخصاص - الصف</p>
+            <div class="phones">
+              <a href="tel:01026135848">01026135848</a>
+              <a href="tel:01115495232">01115495232</a>
+              <a href="tel:0228678410">0228678410</a>
+            </div>
+          </article>
+          <article class="branch">
+            <h3 class="gold-text">الفرع الثاني</h3>
+            <p>القبابات - الكوبري البحري - بجوار الشويبة</p>
+            <div class="phones">
+              <a href="tel:01026135848">01026135848</a>
+              <a href="tel:01115495232">01115495232</a>
+              <a href="tel:0228678410">0228678410</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="band lifestyle-shot">
+        <img src="./images/lifestyle-hands.png" alt="" />
+      </div>
+
+      <section class="section" id="contact">
+        <div class="contact-grid">
+          <a class="contact-card" href="tel:01115495323">
+            <h3 class="gold-text">اتصل بنا</h3>
+            <p>متاحون للرد على استفساراتك</p>
+            <strong>٠١١ ١٥٤٩ ٥٣٢٣</strong>
+          </a>
+          <a class="contact-card" href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">
+            <h3 class="gold-text">واتساب</h3>
+            <p>راسلنا مباشرة</p>
+            <strong>ابدأ محادثة</strong>
+          </a>
+          <div class="contact-card">
+            <h3 class="gold-text">العنوان</h3>
+            <p>كوبرى غمازه الكبري<br />منزل الحاج يحى أبو قشطة</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <img src="./images/logo.png" alt="" />
+          <p>مجوهرات الأقصى بالإخصاص<br />لبيع وشراء الذهب والمجوهرات</p>
+        </div>
+        <div class="footer-col">
+          <h4>روابط</h4>
+          <button data-go="about">من نحن</button>
+          <button data-go="collection">المجموعة</button>
+          <button data-go="branches">فروعنا</button>
+          <button data-go="contact">تواصل معنا</button>
+        </div>
+        <div class="footer-col">
+          <h4>تواصل</h4>
+          <a href="tel:01115495323">٠١١ ١٥٤٩ ٥٣٢٣</a>
+          <a href="https://www.facebook.com/mokhtarewis73m/" target="_blank" rel="noopener noreferrer">فيسبوك</a>
+          <a href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">واتساب</a>
+        </div>
+      </div>
+      <div class="legal">
+        <span>جميع الحقوق محفوظة © 2026 مجوهرات الأقصى</span>
+        <span>مختار عبد الحميد شلبية</span>
+      </div>
+    </footer>
+
+    <div class="dock">
+      <a class="dock-wa" href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">واتساب</a>
+      <a class="dock-call" href="tel:01115495323">اتصال</a>
+    </div>
+
+    <script src="./js/site.js"></script>
   </body>
 </html>
