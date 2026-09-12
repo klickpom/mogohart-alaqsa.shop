@@ -42,6 +42,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  overflow-x: clip;
+  scroll-padding-top: calc(var(--nav-h) + 8px);
 }
 
 img {
@@ -96,11 +98,17 @@ a {
 }
 
 .gold-text {
+  color: var(--gold-2);
   background: linear-gradient(120deg, var(--gold) 0%, var(--gold-2) 28%, #fff3bf 48%, var(--gold-3) 72%, var(--gold) 100%);
   background-size: 220% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .gold-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 html.motion .gold-text {
@@ -208,7 +216,9 @@ html.motion .gold-text {
 .nav-links {
   display: none;
   align-items: center;
-  gap: 28px;
+  gap: clamp(10px, 2.2vw, 28px);
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav-links a,
@@ -329,7 +339,6 @@ body.menu-open .drawer {
   position: relative;
   min-height: 100vh;
   min-height: 100svh;
-  min-height: 100dvh;
   display: flex;
   align-items: flex-end;
   padding: calc(var(--nav-h) + 12px) var(--pad) calc(28px + var(--dock-h));
@@ -646,6 +655,13 @@ html.motion .ticker-track {
   padding: 56px var(--pad);
 }
 
+#collection,
+#about,
+#branches,
+#contact {
+  scroll-margin-top: calc(var(--nav-h) + 8px);
+}
+
 .section-head {
   display: flex;
   align-items: end;
@@ -679,17 +695,15 @@ html.motion .ticker-track {
   border: 1px solid var(--line);
   border-radius: calc(var(--radius) + 4px);
   box-shadow: var(--shadow);
+  background: radial-gradient(circle at 50% 42%, #163524 0%, #06110c 70%);
 }
 
 .poster img {
   width: 100%;
-  height: min(52vw, 280px);
-  object-fit: cover;
-  object-position: center 35%;
-}
-
-html.motion .poster img {
-  animation: kenburns 26s ease-in-out infinite alternate;
+  height: auto;
+  max-height: min(92vw, 420px);
+  object-fit: contain;
+  object-position: center;
 }
 
 .products {
@@ -747,7 +761,7 @@ html.motion .poster img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 42%;
+  object-position: 50% 32%;
   transition: transform 0.5s ease;
 }
 
@@ -799,25 +813,35 @@ html.motion .poster img {
   background: var(--bg-3);
 }
 
-.split img {
+.split > img {
   width: 100%;
   height: 240px;
   object-fit: cover;
+  object-position: center;
 }
 
 .lifestyle-shot {
   position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  background: #0a1810;
+}
+
+.lifestyle-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 8%;
+  transform: scale(1.18);
+  transform-origin: 50% 8%;
 }
 
 .lifestyle-shot::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 150px;
-  height: 42px;
-  background: linear-gradient(90deg, #0d1f15 10%, transparent 85%);
+  inset: 0;
   pointer-events: none;
+  background: linear-gradient(180deg, transparent 58%, rgba(13, 31, 21, 0.55) 78%, var(--bg-3) 100%);
 }
 
 .block {
@@ -913,19 +937,22 @@ html.motion .poster img {
   direction: ltr;
 }
 
-.band {
-  height: min(42vh, 320px);
-  overflow: hidden;
+.showcase-band {
+  margin: 8px 0 0;
+  padding: 18px var(--pad) 28px;
+  background: radial-gradient(circle at 50% 40%, #143322 0%, var(--bg) 72%);
 }
 
-.band img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-html.motion .band img {
-  animation: kenburns 30s ease-in-out infinite alternate;
+.showcase-band img {
+  display: block;
+  width: min(100%, 640px);
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: #06110c;
 }
 
 .contact-grid {
@@ -1044,7 +1071,13 @@ html.motion .band img {
   color: var(--gold-2);
 }
 
-@media (max-height: 720px) {
+@media (max-height: 820px) {
+  .hero {
+    min-height: 0;
+    padding-top: calc(var(--nav-h) + 18px);
+    padding-bottom: calc(24px + var(--dock-h));
+  }
+
   .hero-logo {
     width: 64px;
     height: 64px;
@@ -1052,7 +1085,7 @@ html.motion .band img {
   }
 
   .hero h1 {
-    font-size: clamp(36px, 11vw, 58px);
+    font-size: clamp(34px, 9vw, 56px);
   }
 
   .lede {
@@ -1086,8 +1119,8 @@ html.motion .band img {
   }
 
   .hero-logo {
-    width: 108px;
-    height: 108px;
+    width: 96px;
+    height: 96px;
   }
 
   .lede {
@@ -1096,12 +1129,47 @@ html.motion .band img {
   }
 
   .poster img {
-    height: min(46vw, 460px);
+    max-height: min(70vw, 520px);
   }
 
   .products {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
+  }
+
+  .block {
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .branches,
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer {
+    padding-bottom: 40px;
+  }
+
+  .legal {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .showcase-band img {
+    width: min(100%, 640px);
+  }
+
+  .lifestyle-shot {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .products {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .split {
@@ -1117,40 +1185,35 @@ html.motion .band img {
     order: -1;
   }
 
-  .split img,
-  .band {
+  .split > img,
+  .lifestyle-shot {
     height: 100%;
-    min-height: 360px;
-  }
-
-  .block {
-    padding: 48px 42px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .branches,
-  .contact-grid,
-  .footer-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 380px;
+    aspect-ratio: auto;
   }
 
   .contact-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .footer {
-    padding-bottom: 40px;
-  }
-
   .footer-grid {
     grid-template-columns: 1.4fr 1fr 1fr;
   }
 
-  .legal {
-    grid-template-columns: 1fr auto;
-    align-items: center;
+  .hero-logo {
+    width: 108px;
+    height: 108px;
+  }
+}
+
+@media (min-width: 720px) and (max-height: 820px) {
+  .hero-logo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 5.4vw, 58px);
   }
 }
 
@@ -1160,7 +1223,11 @@ html.motion .band img {
   }
 
   .hero h1 {
-    font-size: 88px;
+    font-size: 76px;
+  }
+
+  .block {
+    padding: 48px 42px;
   }
 }
 

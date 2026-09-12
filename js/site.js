@@ -69,7 +69,7 @@ if (hero && heroSpot) {
 }
 
 const revealItems = document.querySelectorAll(
-  ".poster, .section-head, .product, .split, .center, .branch, .contact-card, .band, .footer-grid, .stat, .ticker"
+  ".poster, .section-head, .product, .split, .center, .branch, .contact-card, .showcase-band, .footer-grid, .stat, .ticker"
 );
 
 revealItems.forEach((el, i) => {
@@ -101,14 +101,14 @@ window.setTimeout(() => {
   revealItems.forEach((el) => el.classList.add("is-in"));
 }, 4200);
 
-const desktop = window.matchMedia("(min-width: 720px)").matches;
-if (desktop) {
+const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+if (canHover) {
   document.querySelectorAll(".product").forEach((card) => {
     card.addEventListener("pointermove", (event) => {
       const box = card.getBoundingClientRect();
       const x = (event.clientX - box.left) / box.width - 0.5;
       const y = (event.clientY - box.top) / box.height - 0.5;
-      card.style.transform = `translateY(-8px) rotateX(${y * -7}deg) rotateY(${x * 8}deg)`;
+      card.style.transform = `translateY(-6px) rotateX(${y * -4}deg) rotateY(${x * 5}deg)`;
     });
     card.addEventListener("pointerleave", () => {
       card.style.transform = "";
