@@ -17,13 +17,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/site.css" />
+    <link rel="stylesheet" href="./css/site.css?v=4" />
   </head>
   <body>
     <a class="skip" href="#collection">تخطي إلى المجموعة</a>
 
     <div class="intro" id="intro" aria-hidden="true">
-      <img src="./images/logo.png" alt="" />
+      <div class="intro-mark">
+        <span class="intro-ring"></span>
+        <img src="./images/logo.png" alt="" />
+      </div>
     </div>
 
     <header class="nav" id="nav">
@@ -54,9 +57,12 @@
 
     <main id="top">
       <section class="hero">
-        <div class="hero-media">
+        <div class="hero-media" id="heroMedia">
           <img src="./images/hero-bg.jpeg" alt="" />
           <div class="hero-shade"></div>
+          <div class="sparks" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
         </div>
         <div class="hero-frame"></div>
         <div class="hero-copy">
@@ -282,6 +288,6 @@
       <a class="dock-call" href="tel:01115495323">اتصال</a>
     </div>
 
-    <script src="./js/site.js"></script>
+    <script src="./js/site.js?v=4"></script>
   </body>
 </html>
