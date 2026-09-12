@@ -69,7 +69,7 @@ if (hero && heroSpot) {
 }
 
 const revealItems = document.querySelectorAll(
-  ".poster, .section-head, .product, .split, .center, .branch, .contact-card, .showcase-band, .footer-grid, .stat, .ticker"
+  ".section-head, .product, .split, .center, .branch, .contact-card, .showcase-band, .footer-grid, .stat"
 );
 
 revealItems.forEach((el, i) => {

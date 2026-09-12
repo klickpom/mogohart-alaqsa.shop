@@ -615,44 +615,12 @@ html.motion .btn-gold::after {
   display: none;
 }
 
-.ticker {
-  overflow: hidden;
-  border-block: 1px solid var(--line);
-  background: linear-gradient(180deg, #08140f, #0b1a13);
-  padding: 14px 0;
-  direction: ltr;
-}
-
-.ticker-track {
-  display: flex;
-  width: max-content;
-  gap: 40px;
-  padding-inline: 20px;
-  font-family: var(--display);
-  font-size: clamp(16px, 3.4vw, 22px);
-  color: var(--gold-2);
-  white-space: nowrap;
-}
-
-.ticker-track span {
-  position: relative;
-  padding-inline-end: 40px;
-}
-
-.ticker-track span::after {
-  content: "✦";
-  position: absolute;
-  right: 6px;
-  left: auto;
-  color: rgba(241, 211, 106, 0.55);
-}
-
-html.motion .ticker-track {
-  animation: ticker 32s linear infinite;
-}
-
 .section {
   padding: 56px var(--pad);
+}
+
+.collection-section {
+  padding-top: 36px;
 }
 
 #collection,
@@ -688,22 +656,6 @@ html.motion .ticker-track {
 .kicker {
   color: rgba(241, 211, 106, 0.55);
   font-size: 13px;
-}
-
-.poster {
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: calc(var(--radius) + 4px);
-  box-shadow: var(--shadow);
-  background: radial-gradient(circle at 50% 42%, #163524 0%, #06110c 70%);
-}
-
-.poster img {
-  width: 100%;
-  height: auto;
-  max-height: min(92vw, 420px);
-  object-fit: contain;
-  object-position: center;
 }
 
 .products {
@@ -1128,8 +1080,8 @@ html.motion .ticker-track {
     max-width: 36ch;
   }
 
-  .poster img {
-    max-height: min(70vw, 520px);
+  .collection-section {
+    padding-top: 48px;
   }
 
   .products {
@@ -1374,15 +1326,6 @@ body.menu-open .drawer button:nth-child(6) { animation-delay: 0.34s; }
   to {
     opacity: 1;
     transform: none;
-  }
-}
-
-@keyframes ticker {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
   }
 }
 
