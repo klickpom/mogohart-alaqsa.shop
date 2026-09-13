@@ -1,4 +1,5 @@
 const intro = document.getElementById("intro");
+const introSkip = document.getElementById("introSkip");
 const nav = document.getElementById("nav");
 const menuBtn = document.getElementById("menuBtn");
 const hero = document.querySelector(".hero");
@@ -6,13 +7,30 @@ const heroMedia = document.getElementById("heroMedia");
 const heroSpot = document.getElementById("heroSpot");
 
 document.documentElement.classList.add("motion");
-document.body.classList.add("is-ready");
 
+let introClosed = false;
 const finishIntro = () => {
+  if (introClosed) return;
+  introClosed = true;
   intro?.classList.add("is-done");
+  document.body.classList.add("is-ready");
+  document.body.classList.remove("intro-lock");
 };
 
-window.setTimeout(finishIntro, 1250);
+window.setTimeout(finishIntro, 2600);
+window.setTimeout(finishIntro, 5000);
+introSkip?.addEventListener("click", finishIntro);
+intro?.addEventListener("click", (event) => {
+  if (event.target === introSkip) return;
+  finishIntro();
+});
+window.addEventListener("keydown", (event) => {
+  if (introClosed) return;
+  if (event.key === "Escape" || event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    finishIntro();
+  }
+});
 
 let latestY = window.scrollY;
 let ticking = false;
