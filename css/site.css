@@ -540,6 +540,16 @@ html.motion body.is-ready .hero-copy .gold-text {
   display: block;
 }
 
+.hero h1 .hero-place {
+  display: inline-block;
+  margin-top: 0.1em;
+  font-size: 0.58em;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
 .lede {
   margin: 12px auto 0;
   max-width: 28ch;
