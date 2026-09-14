@@ -17,7 +17,7 @@ const finishIntro = () => {
   document.body.classList.remove("intro-lock");
 };
 
-window.setTimeout(finishIntro, 2600);
+window.setTimeout(finishIntro, 3000);
 window.setTimeout(finishIntro, 5000);
 introSkip?.addEventListener("click", finishIntro);
 intro?.addEventListener("click", (event) => {
@@ -42,7 +42,7 @@ const onScroll = () => {
   ticking = true;
   window.requestAnimationFrame(() => {
     if (heroMedia) {
-      heroMedia.style.transform = `translate3d(0, ${latestY * 0.18}px, 0)`;
+      heroMedia.style.transform = `translate3d(0, ${latestY * 0.24}px, 0)`;
     }
     ticking = false;
   });
@@ -98,7 +98,7 @@ revealItems.forEach((el, i) => {
     el.classList.contains("branch") ||
     el.classList.contains("contact-card")
   ) {
-    el.style.setProperty("--d", `${(i % 4) * 90}ms`);
+    el.style.setProperty("--d", `${(i % 6) * 70}ms`);
   }
 });
 
@@ -117,7 +117,7 @@ const io = new IntersectionObserver(
 revealItems.forEach((el) => io.observe(el));
 window.setTimeout(() => {
   revealItems.forEach((el) => el.classList.add("is-in"));
-}, 4200);
+}, 9000);
 
 const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 if (canHover) {
@@ -126,10 +126,22 @@ if (canHover) {
       const box = card.getBoundingClientRect();
       const x = (event.clientX - box.left) / box.width - 0.5;
       const y = (event.clientY - box.top) / box.height - 0.5;
-      card.style.transform = `translateY(-6px) rotateX(${y * -4}deg) rotateY(${x * 5}deg)`;
+      card.style.transform = `translateY(-10px) rotateX(${y * -6}deg) rotateY(${x * 7}deg)`;
     });
     card.addEventListener("pointerleave", () => {
       card.style.transform = "";
+    });
+  });
+
+  document.querySelectorAll(".btn-gold").forEach((btn) => {
+    btn.addEventListener("pointermove", (event) => {
+      const box = btn.getBoundingClientRect();
+      const x = event.clientX - box.left - box.width / 2;
+      const y = event.clientY - box.top - box.height / 2;
+      btn.style.transform = `translate(${x * 0.12}px, ${y * 0.16}px)`;
+    });
+    btn.addEventListener("pointerleave", () => {
+      btn.style.transform = "";
     });
   });
 }
