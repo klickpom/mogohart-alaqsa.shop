@@ -45,7 +45,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="./images/hero-bg.jpeg" fetchpriority="high" />
-    <link rel="stylesheet" href="./css/site.css?v=25" />
+    <link rel="stylesheet" href="./css/site.css?v=27" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -217,7 +217,7 @@
                 "name": "كم سعر جرام الذهب عيار ٢١ في الإخصاص؟",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "سعر جرام عيار ٢١ التقريبي يظهر في لوحة مجوهرات الأقصى ويتحدث كل ٣٠ ثانية. هذا سعر سوق عالمي، وسعر البيع والشراء في المحل عند كوبري غمازة الكبري يتأكد على واتساب 01115495323."
+                  "text": "سعر بيع وشراء جرام عيار ٢١ في مصر يظهر على لوحة مجوهرات الأقصى ويتحدث تلقائياً. المصنعية على القطعة تتأكد في المحل."
                 }
               },
               {
@@ -225,7 +225,7 @@
                 "name": "هل أسعار الذهب مكتوبة على الموقع؟",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "الموقع يعرض سعر السوق العالمي التقريبي للجرام ويتحدث كل ٣٠ ثانية. سعر البيع والشراء داخل المحل يتأكد عبر واتساب أو بالاتصال."
+                  "text": "اللوحة تعرض سعر بيع وشراء الجرام في السوق المصري لحظة بلحظة. المصنعية على المشغولات تتأكد في المحل."
                 }
               },
               {
@@ -374,9 +374,8 @@
 
       <section class="section price-board" id="prices">
         <div class="center">
-          <p class="live-pill"><span class="live-dot" aria-hidden="true"></span> تحديث مباشر كل ٣٠ ثانية</p>
+          <p class="live-pill"><span class="live-dot" aria-hidden="true"></span> بيتحدث لوحده</p>
           <h2 class="gold-text">سعر الذهب الآن</h2>
-          <p>سعر السوق العالمي التقريبي للجرام بالجنيه. سعر البيع والشراء في المحل يتأكد على واتساب.</p>
         </div>
         <div class="price-card">
           <div class="price-meta">
@@ -387,22 +386,26 @@
           <div class="price-table" id="priceTable">
             <div class="price-row head">
               <span>العيار</span>
-              <span>سعر الجرام</span>
+              <span>شراء</span>
+              <span>بيع</span>
               <span>الحركة</span>
             </div>
             <div class="price-row" data-karat="24">
-              <span>جرام عيار ٢٤</span>
-              <b class="price-num">—</b>
+              <span>عيار ٢٤</span>
+              <b class="price-num" data-side="buy">—</b>
+              <b class="price-num" data-side="sell">—</b>
               <span class="price-delta">—</span>
             </div>
             <div class="price-row is-main" data-karat="21">
-              <span>جرام عيار ٢١ <small>عيار المحل</small></span>
-              <b class="price-num">—</b>
+              <span>عيار ٢١ <small>عيار المحل</small></span>
+              <b class="price-num" data-side="buy">—</b>
+              <b class="price-num" data-side="sell">—</b>
               <span class="price-delta">—</span>
             </div>
             <div class="price-row" data-karat="18">
-              <span>جرام عيار ١٨</span>
-              <b class="price-num">—</b>
+              <span>عيار ١٨</span>
+              <b class="price-num" data-side="buy">—</b>
+              <b class="price-num" data-side="sell">—</b>
               <span class="price-delta">—</span>
             </div>
           </div>
@@ -417,9 +420,9 @@
                 <option value="18">١٨</option>
               </select>
             </label>
-            <p>القيمة التقديرية <b id="calcOut">—</b></p>
+            <p>قيمة البيع <b id="calcOut">—</b></p>
           </form>
-          <p class="price-note">الرقم محسوب من سعر الأونصة العالمي وسعر الدولار، ويتغير مع السوق. مش سعر القطعة في المحل.</p>
+          <p class="price-note">سعر الجرام في السوق المصري الآن. المصنعية على القطعة تتأكد في المحل.</p>
           <a class="btn btn-gold" href="https://wa.me/201115495323?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%B3%D8%B9%D8%B1%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AD%D9%84" target="_blank" rel="noopener noreferrer">اسأل عن سعر المحل</a>
           <a class="more-link" href="/prices/">صفحة سعر الذهب في الإخصاص</a>
         </div>
@@ -713,11 +716,11 @@
           </details>
           <details>
             <summary>كم سعر جرام الذهب عيار ٢١ في الإخصاص؟</summary>
-            <p class="faq-a">سعر جرام عيار ٢١ التقريبي يظهر في لوحة مجوهرات الأقصى ويتحدث كل ٣٠ ثانية. هذا سعر سوق عالمي، وسعر البيع والشراء في المحل عند كوبري غمازة الكبري يتأكد على واتساب 01115495323.</p>
+            <p class="faq-a">سعر بيع وشراء جرام عيار ٢١ في مصر يظهر على لوحة مجوهرات الأقصى ويتحدث تلقائياً. المصنعية على القطعة تتأكد في المحل.</p>
           </details>
           <details>
             <summary>هل أسعار الذهب مكتوبة على الموقع؟</summary>
-            <p class="faq-a">الموقع يعرض سعر السوق العالمي التقريبي للجرام ويتحدث كل ٣٠ ثانية. سعر البيع والشراء داخل المحل يتأكد عبر واتساب أو بالاتصال.</p>
+            <p class="faq-a">اللوحة تعرض سعر بيع وشراء الجرام في السوق المصري لحظة بلحظة. المصنعية على المشغولات تتأكد في المحل.</p>
           </details>
           <details>
             <summary>من صاحب مجوهرات الأقصى؟</summary>
@@ -761,6 +764,6 @@
       <a class="dock-call" href="tel:01115495323">اتصال</a>
     </div>
 
-    <script src="./js/site.js?v=25"></script>
+    <script src="./js/site.js?v=27"></script>
   </body>
 </html>

@@ -1919,9 +1919,47 @@ noscript .citation {
   font-variant-numeric: tabular-nums;
 }
 
+.live-bar {
+  position: fixed;
+  top: var(--nav-h);
+  right: 0;
+  left: 0;
+  z-index: 49;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 12px;
+  background: rgba(7, 15, 12, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(16px);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.live-bar b {
+  color: var(--gold-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.live-bar em {
+  font-style: normal;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.has-live-bar .hero {
+  padding-top: calc(var(--nav-h) + 46px);
+}
+
+.has-live-bar .page-seo {
+  padding-top: calc(var(--nav-h) + 62px);
+}
+
 .price-row {
   display: grid;
-  grid-template-columns: 1.3fr 1fr 0.8fr;
+  grid-template-columns: 1.15fr 1fr 1fr 0.7fr;
   gap: 8px;
   align-items: center;
   padding: 15px 18px;
@@ -1957,9 +1995,13 @@ noscript .citation {
 
 .price-num {
   font-variant-numeric: tabular-nums;
-  font-size: clamp(20px, 4vw, 28px);
+  font-size: clamp(18px, 3.4vw, 26px);
   font-weight: 800;
   color: var(--gold-2);
+}
+
+.price-num[data-side="buy"] {
+  color: #f6edd2;
 }
 
 .price-delta {
@@ -2062,15 +2104,22 @@ noscript .citation {
   }
 
   .price-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    grid-template-columns: 1fr 1fr auto;
   }
 
-  .price-delta {
-    width: 100%;
+  .price-row > span:first-child {
+    grid-column: 1 / -1;
   }
+
+  .price-num[data-side="buy"]::before,
+  .price-num[data-side="sell"]::before {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+  }
+
+  .price-num[data-side="buy"]::before { content: "شراء "; }
+  .price-num[data-side="sell"]::before { content: "بيع "; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -146,92 +146,130 @@ if (canHover) {
   });
 }
 
+const liveBar = document.createElement("div");
+liveBar.id = "liveBar";
+liveBar.className = "live-bar";
+liveBar.innerHTML = '<span class="live-dot" aria-hidden="true"></span><span>عيار ٢١</span><b id="tickSell">—</b><em>بيع</em><b id="tickBuy">—</b><em>شراء</em>';
+document.body.prepend(liveBar);
+document.body.classList.add("has-live-bar");
+
 const priceTable = document.getElementById("priceTable");
-if (priceTable) {
-  const OUNCE_GRAMS = 31.1034768;
-  const money = new Intl.NumberFormat("en-US", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  });
-  const rows = {};
-  priceTable.querySelectorAll("[data-karat]").forEach((row) => {
-    rows[row.dataset.karat] = row;
-  });
-  const last = {};
-  let latest = null;
-  const gramInput = document.getElementById("gramInput");
-  const karatInput = document.getElementById("karatInput");
-  const calcOut = document.getElementById("calcOut");
-  const paintCalc = () => {
-    if (!calcOut) return;
-    const grams = Number(gramInput && gramInput.value);
-    const per = latest && latest[karatInput ? karatInput.value : "21"];
-    calcOut.textContent = grams > 0 && per ? `${money.format(per * grams)} ج.م` : "—";
-  };
-  gramInput?.addEventListener("input", paintCalc);
-  karatInput?.addEventListener("change", paintCalc);
+const money = new Intl.NumberFormat("en-US", {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+});
+const rows = {};
+priceTable?.querySelectorAll("[data-karat]").forEach((row) => {
+  rows[row.dataset.karat] = row;
+});
+const last = {};
+let latest = null;
+const gramInput = document.getElementById("gramInput");
+const karatInput = document.getElementById("karatInput");
+const calcOut = document.getElementById("calcOut");
+const paintCalc = () => {
+  if (!calcOut) return;
+  const grams = Number(gramInput && gramInput.value);
+  const quote = latest && latest[karatInput ? karatInput.value : "21"];
+  calcOut.textContent = grams > 0 && quote ? `${money.format(quote.sell * grams)} ج.م` : "—";
+};
+gramInput?.addEventListener("input", paintCalc);
+karatInput?.addEventListener("change", paintCalc);
 
-  const paintNumber = (el, next) => {
-    const from = Number(el.dataset.value || next);
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    el.dataset.value = String(next);
-    if (reduce) {
-      el.textContent = money.format(next);
-      return;
-    }
-    const start = performance.now();
-    const tick = (now) => {
-      const t = Math.min(1, (now - start) / 900);
-      const eased = 1 - (1 - t) ** 3;
-      el.textContent = money.format(from + (next - from) * eased);
-      if (t < 1) requestAnimationFrame(tick);
+const paintNumber = (el, next) => {
+  if (!el) return;
+  const from = Number(el.dataset.value || next);
+  el.dataset.value = String(next);
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) {
+    el.textContent = money.format(next);
+    return;
+  }
+  const start = performance.now();
+  const tick = (now) => {
+    const t = Math.min(1, (now - start) / 800);
+    const eased = 1 - (1 - t) ** 3;
+    el.textContent = money.format(from + (next - from) * eased);
+    if (t < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+};
+
+const refreshPrices = async () => {
+  const status = document.getElementById("priceUpdated");
+  try {
+    const res = await fetch("https://golden-circle.net/api/current-prices");
+    if (!res.ok) throw new Error("network");
+    const data = await res.json();
+    const p = data.prices;
+    if (!p || !p.sell_21 || !p.buy_21) throw new Error("shape");
+    const values = {
+      24: { buy: Number(p.buy_24), sell: Number(p.sell_24), change: Number(p.sell_change_24) },
+      21: { buy: Number(p.buy_21), sell: Number(p.sell_21), change: Number(p.sell_change_21) },
+      18: { buy: Number(p.buy_18), sell: Number(p.sell_18), change: Number(p.sell_change_18) },
     };
-    requestAnimationFrame(tick);
-  };
-
-  const refreshPrices = async () => {
-    const status = document.getElementById("priceUpdated");
+    latest = values;
+    paintCalc();
+    paintNumber(document.getElementById("tickSell"), values[21].sell);
+    paintNumber(document.getElementById("tickBuy"), values[21].buy);
+    Object.entries(values).forEach(([karat, quote]) => {
+      const row = rows[karat];
+      if (!row) return;
+      paintNumber(row.querySelector('[data-side="buy"]'), quote.buy);
+      paintNumber(row.querySelector('[data-side="sell"]'), quote.sell);
+      const delta = row.querySelector(".price-delta");
+      const prev = last[karat];
+      const direction = quote.change > 0 || (prev && quote.sell > prev) ? 1 : quote.change < 0 || (prev && quote.sell < prev) ? -1 : 0;
+      if (delta && (prev || quote.change)) {
+        const pct = prev ? Math.abs(((quote.sell - prev) / prev) * 100) : 0;
+        delta.textContent = `${direction > 0 ? "▲" : direction < 0 ? "▼" : "•"}${pct ? " " + pct.toFixed(2) + "%" : ""}`;
+        delta.className = `price-delta ${direction > 0 ? "is-up" : direction < 0 ? "is-down" : ""}`;
+        row.classList.remove("flash-up", "flash-down");
+        if (direction) {
+          void row.offsetWidth;
+          row.classList.add(direction > 0 ? "flash-up" : "flash-down");
+        }
+      }
+      last[karat] = quote.sell;
+    });
+    const oz = document.getElementById("ozPrice");
+    const usd = document.getElementById("usdRate");
+    if (oz) oz.textContent = `$${money.format(p.screen || p.ounce)}`;
+    if (usd) usd.textContent = money.format(p.dollar);
+    if (status) {
+      const updated = data.timestamp ? new Date(data.timestamp) : new Date();
+      status.textContent = `الآن ${updated.toLocaleTimeString("ar-EG", { hour: "2-digit", minute: "2-digit", second: "2-digit" })}`;
+    }
+  } catch (error) {
+    if (latest) return;
     try {
       const [goldRes, fxRes] = await Promise.all([
         fetch("https://api.gold-api.com/price/XAU"),
         fetch("https://open.er-api.com/v6/latest/USD"),
       ]);
-      if (!goldRes.ok || !fxRes.ok) throw new Error("network");
       const gold = await goldRes.json();
       const fx = await fxRes.json();
-      const ounce = Number(gold.price);
-      const egp = Number(fx.rates && fx.rates.EGP);
-      if (!ounce || !egp) throw new Error("shape");
-      const gram24 = (ounce / OUNCE_GRAMS) * egp;
-      const values = { 24: gram24, 21: gram24 * (21 / 24), 18: gram24 * (18 / 24) };
+      const gram24 = (Number(gold.price) / 31.1034768) * Number(fx.rates.EGP);
+      const values = {
+        24: { buy: gram24, sell: gram24, change: 0 },
+        21: { buy: gram24 * (21 / 24), sell: gram24 * (21 / 24), change: 0 },
+        18: { buy: gram24 * (18 / 24), sell: gram24 * (18 / 24), change: 0 },
+      };
       latest = values;
       paintCalc();
-      Object.entries(values).forEach(([karat, value]) => {
+      paintNumber(document.getElementById("tickSell"), values[21].sell);
+      paintNumber(document.getElementById("tickBuy"), values[21].buy);
+      Object.entries(values).forEach(([karat, quote]) => {
         const row = rows[karat];
-        const num = row.querySelector(".price-num");
-        const delta = row.querySelector(".price-delta");
-        paintNumber(num, value);
-        const prev = last[karat];
-        if (prev) {
-          const diff = value - prev;
-          const pct = Math.abs((diff / prev) * 100);
-          delta.textContent = `${diff > 0 ? "▲" : diff < 0 ? "▼" : "•"} ${pct.toFixed(2)}%`;
-          delta.className = `price-delta ${diff > 0 ? "is-up" : diff < 0 ? "is-down" : ""}`;
-          row.classList.remove("flash-up", "flash-down");
-          void row.offsetWidth;
-          if (diff !== 0) row.classList.add(diff > 0 ? "flash-up" : "flash-down");
-        }
-        last[karat] = value;
+        if (!row) return;
+        paintNumber(row.querySelector('[data-side="buy"]'), quote.buy);
+        paintNumber(row.querySelector('[data-side="sell"]'), quote.sell);
       });
-      document.getElementById("ozPrice").textContent = `$${money.format(ounce)}`;
-      document.getElementById("usdRate").textContent = money.format(egp);
-      const updated = gold.updatedAt ? new Date(gold.updatedAt) : new Date();
-      status.textContent = `آخر تحديث ${updated.toLocaleTimeString("ar-EG", { hour: "2-digit", minute: "2-digit" })}`;
-    } catch (error) {
-      status.textContent = "تعذر تحديث السعر. اسأل المحل على واتساب.";
+    } catch (fallbackError) {
+      if (status) status.textContent = "جاري الاتصال بسعر السوق";
     }
-  };
+  }
+};
 
-  refreshPrices();
-  window.setInterval(refreshPrices, 30000);
-}
+refreshPrices();
+window.setInterval(refreshPrices, 15000);
