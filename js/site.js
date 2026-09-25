@@ -87,7 +87,7 @@ if (hero && heroSpot) {
 }
 
 const revealItems = document.querySelectorAll(
-  ".section-head, .product, .split, .center, .branch, .contact-card, .showcase-band, .footer-grid, .stat"
+  ".section-head, .product, .split, .center, .branch, .contact-card, .showcase-band, .footer-grid, .stat, .local-panel"
 );
 
 revealItems.forEach((el, i) => {

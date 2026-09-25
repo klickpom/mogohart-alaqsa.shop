@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.mogohart-alaqsa\.shop$ [NC]
+RewriteRule ^ https://mogohart-alaqsa.shop%{REQUEST_URI} [R=301,L]
+
+<IfModule mod_headers.c>
+  <FilesMatch "^(llms\.txt|llms-full\.txt|ai\.txt|robots\.txt)$">
+    Header set Content-Type "text/plain; charset=utf-8"
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+</IfModule>
