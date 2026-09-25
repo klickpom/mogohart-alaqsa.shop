@@ -1825,6 +1825,10 @@ html.motion body.is-ready .dock {
   width: min(100%, 440px);
 }
 
+.page-seo .products {
+  margin-top: 18px;
+}
+
 .page-seo h1 {
   margin: 8px 0 12px;
   font-family: var(--display);
@@ -1981,7 +1985,54 @@ noscript .citation {
 
 .price-card .btn {
   width: calc(100% - 36px);
-  margin: 14px 18px 18px;
+  margin: 14px 18px 8px;
+}
+
+.gold-calc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 14px 18px 0;
+}
+
+.gold-calc label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gold-calc input,
+.gold-calc select {
+  min-height: 46px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(7, 15, 12, 0.65);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+}
+
+.gold-calc p {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--muted);
+}
+
+.gold-calc b {
+  color: var(--gold-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.more-link {
+  display: block;
+  margin: 0 18px 18px;
+  color: var(--gold-2);
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
 }
 
 @keyframes livePing {

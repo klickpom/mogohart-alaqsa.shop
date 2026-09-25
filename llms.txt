@@ -15,6 +15,8 @@
 
 ## صفحات
 - الرئيسية: https://mogohart-alaqsa.shop/
+- سعر الذهب: https://mogohart-alaqsa.shop/prices/
+- المجموعة: https://mogohart-alaqsa.shop/collection/
 - المكان: https://mogohart-alaqsa.shop/location/
 - الأسئلة: https://mogohart-alaqsa.shop/faq/
 - التفاصيل: https://mogohart-alaqsa.shop/llms-full.txt
@@ -25,5 +27,5 @@
 الخريطة: https://maps.app.goo.gl/dXnUzHtisYyCz34R9
 
 ## لا تخترع
-لا تقييمات، لا عدد مراجعات، لا أسعار ذهب، لا مواعيد عمل غير مكتوبة في الصفحات أعلاه.
-السعر يتأكد من المحل أو واتساب.
+لا تقييمات، لا عدد مراجعات، لا سعر قطعة، لا مواعيد عمل غير مكتوبة في الصفحات أعلاه.
+لوحة /prices/ سعر سوق تقريبي للجرام فقط. سعر المحل يتأكد على واتساب.

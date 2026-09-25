@@ -45,7 +45,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="./images/hero-bg.jpeg" fetchpriority="high" />
-    <link rel="stylesheet" href="./css/site.css?v=24" />
+    <link rel="stylesheet" href="./css/site.css?v=25" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -214,6 +214,14 @@
               },
               {
                 "@type": "Question",
+                "name": "كم سعر جرام الذهب عيار ٢١ في الإخصاص؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "سعر جرام عيار ٢١ التقريبي يظهر في لوحة مجوهرات الأقصى ويتحدث كل ٣٠ ثانية. هذا سعر سوق عالمي، وسعر البيع والشراء في المحل عند كوبري غمازة الكبري يتأكد على واتساب 01115495323."
+                }
+              },
+              {
+                "@type": "Question",
                 "name": "هل أسعار الذهب مكتوبة على الموقع؟",
                 "acceptedAnswer": {
                   "@type": "Answer",
@@ -314,7 +322,7 @@
       <nav class="nav-links" aria-label="التنقل الرئيسي">
         <button data-go="about">من نحن</button>
         <button data-go="collection">المجموعة</button>
-        <button data-go="prices">السعر</button>
+        <a href="/prices/">السعر</a>
         <button data-go="location">المكان</button>
         <button data-go="branches">فروعنا</button>
         <button data-go="contact">تواصل</button>
@@ -328,7 +336,7 @@
     <div class="drawer" id="drawer">
       <button data-go="about">من نحن</button>
       <button data-go="collection">المجموعة</button>
-      <button data-go="prices">السعر</button>
+      <a href="/prices/">السعر</a>
       <button data-go="location">المكان</button>
       <button data-go="branches">فروعنا</button>
       <button data-go="faq">أسئلة</button>
@@ -398,8 +406,22 @@
               <span class="price-delta">—</span>
             </div>
           </div>
+          <form class="gold-calc" id="goldCalc">
+            <label>الوزن بالجرام
+              <input id="gramInput" type="number" min="0.1" step="0.1" value="1" inputmode="decimal" />
+            </label>
+            <label>العيار
+              <select id="karatInput">
+                <option value="24">٢٤</option>
+                <option value="21" selected>٢١</option>
+                <option value="18">١٨</option>
+              </select>
+            </label>
+            <p>القيمة التقديرية <b id="calcOut">—</b></p>
+          </form>
           <p class="price-note">الرقم محسوب من سعر الأونصة العالمي وسعر الدولار، ويتغير مع السوق. مش سعر القطعة في المحل.</p>
           <a class="btn btn-gold" href="https://wa.me/201115495323?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%B3%D8%B9%D8%B1%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AD%D9%84" target="_blank" rel="noopener noreferrer">اسأل عن سعر المحل</a>
+          <a class="more-link" href="/prices/">صفحة سعر الذهب في الإخصاص</a>
         </div>
       </section>
 
@@ -410,7 +432,7 @@
         </div>
         <div class="products">
           <article class="product">
-            <div class="product-photo"><img src="./images/catalog-heart.jpg" alt="خاتم قلب فيليغري" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-heart.jpg" alt="خاتم قلب فيليغري" /></div>
             <div class="product-meta">
               <h3>خاتم قلب فيليغري</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%AE%D8%A7%D8%AA%D9%85%20%D9%82%D9%84%D8%A8%20%D9%81%D9%8A%D9%84%D9%8A%D8%BA%D8%B1%D9%8A" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
@@ -418,21 +440,21 @@
           </article>
           <article class="product">
             <span class="product-tag">طقم</span>
-            <div class="product-photo"><img src="./images/catalog-leaf-set.jpg" alt="طقم ورق ذهب" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-leaf-set.jpg" alt="طقم ورق ذهب" /></div>
             <div class="product-meta">
               <h3>طقم ورق ذهب</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%B7%D9%82%D9%85%20%D9%88%D8%B1%D9%82%20%D8%B0%D9%87%D8%A8" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
             </div>
           </article>
           <article class="product">
-            <div class="product-photo"><img src="./images/catalog-pave-bracelet.jpg" alt="إسورة حلقات مرصعة" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-pave-bracelet.jpg" alt="إسورة حلقات مرصعة" /></div>
             <div class="product-meta">
               <h3>إسورة حلقات مرصعة</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%A5%D8%B3%D9%88%D8%B1%D8%A9%20%D8%AD%D9%84%D9%82%D8%A7%D8%AA%20%D9%85%D8%B1%D8%B5%D8%B9%D8%A9" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
             </div>
           </article>
           <article class="product">
-            <div class="product-photo"><img src="./images/catalog-curve-bangles.jpg" alt="أساور منحنية فاخرة" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-curve-bangles.jpg" alt="أساور منحنية فاخرة" /></div>
             <div class="product-meta">
               <h3>أساور منحنية فاخرة</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%A3%D8%B3%D8%A7%D9%88%D8%B1%20%D9%85%D9%86%D8%AD%D9%86%D9%8A%D8%A9%20%D9%81%D8%A7%D8%AE%D8%B1%D8%A9" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
@@ -440,7 +462,7 @@
           </article>
           <article class="product">
             <span class="product-tag">طقم</span>
-            <div class="product-photo"><img src="./images/catalog-bangle-ring.jpg" alt="طقم إسورة وخاتم" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-bangle-ring.jpg" alt="طقم إسورة وخاتم" /></div>
             <div class="product-meta">
               <h3>طقم إسورة وخاتم</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%B7%D9%82%D9%85%20%D8%A5%D8%B3%D9%88%D8%B1%D8%A9%20%D9%88%D8%AE%D8%A7%D8%AA%D9%85" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
@@ -448,42 +470,42 @@
           </article>
           <article class="product">
             <span class="product-tag">استثمار</span>
-            <div class="product-photo"><img src="./images/catalog-gold-bars.jpg" alt="سبيكة ذهب استثماري" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-gold-bars.jpg" alt="سبيكة ذهب استثماري" /></div>
             <div class="product-meta">
               <h3>سبيكة ذهب استثماري</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%B3%D8%A8%D9%8A%D9%83%D8%A9%20%D8%B0%D9%87%D8%A8%20%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D9%8A" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
             </div>
           </article>
           <article class="product">
-            <div class="product-photo"><img src="./images/catalog-filigree-ring.jpg" alt="خاتم فيليغري فاخر" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-filigree-ring.jpg" alt="خاتم فيليغري فاخر" /></div>
             <div class="product-meta">
               <h3>خاتم فيليغري فاخر</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%AE%D8%A7%D8%AA%D9%85%20%D9%81%D9%8A%D9%84%D9%8A%D8%BA%D8%B1%D9%8A%20%D9%81%D8%A7%D8%AE%D8%B1" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
             </div>
           </article>
           <article class="product">
-            <div class="product-photo"><img src="./images/catalog-crescent-earrings.jpg" alt="حلق هلال ذهبي" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-crescent-earrings.jpg" alt="حلق هلال ذهبي" /></div>
             <div class="product-meta">
               <h3>حلق هلال ذهبي</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%AD%D9%84%D9%82%20%D9%87%D9%84%D8%A7%D9%84%20%D8%B0%D9%87%D8%A8%D9%8A" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
             </div>
           </article>
           <article class="product">
-            <div class="product-photo"><img src="./images/catalog-ornate-necklace.jpg" alt="عقد ذهب فاخر" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-ornate-necklace.jpg" alt="عقد ذهب فاخر" /></div>
             <div class="product-meta">
               <h3>عقد ذهب فاخر</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%B9%D9%82%D8%AF%20%D8%B0%D9%87%D8%A8%20%D9%81%D8%A7%D8%AE%D8%B1" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
             </div>
           </article>
           <article class="product">
-            <div class="product-photo"><img src="./images/catalog-tassel-necklace.jpg" alt="عقد دلايات ذهبية" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-tassel-necklace.jpg" alt="عقد دلايات ذهبية" /></div>
             <div class="product-meta">
               <h3>عقد دلايات ذهبية</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%B9%D9%82%D8%AF%20%D8%AF%D9%84%D8%A7%D9%8A%D8%A7%D8%AA%20%D8%B0%D9%87%D8%A8%D9%8A%D8%A9" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
             </div>
           </article>
           <article class="product">
-            <div class="product-photo"><img src="./images/catalog-teardrop.jpg" alt="تعليقة دمعة فيليغري" /></div>
+            <div class="product-photo"><img loading="lazy" decoding="async" src="./images/catalog-teardrop.jpg" alt="تعليقة دمعة فيليغري" /></div>
             <div class="product-meta">
               <h3>تعليقة دمعة فيليغري</h3>
               <a class="wa-mini" href="https://wa.me/201115495323?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D9%80%3A%20%D8%AA%D8%B9%D9%84%D9%8A%D9%82%D8%A9%20%D8%AF%D9%85%D8%B9%D8%A9%20%D9%81%D9%8A%D9%84%D9%8A%D8%BA%D8%B1%D9%8A" target="_blank" rel="noopener noreferrer">اطلب واتساب</a>
@@ -690,6 +712,10 @@
             <p class="faq-a">فرع القبابات في الكوبري البحري بجوار الشويبة، ورقم التليفون 023866788، والخريطة https://maps.app.goo.gl/dXnUzHtisYyCz34R9.</p>
           </details>
           <details>
+            <summary>كم سعر جرام الذهب عيار ٢١ في الإخصاص؟</summary>
+            <p class="faq-a">سعر جرام عيار ٢١ التقريبي يظهر في لوحة مجوهرات الأقصى ويتحدث كل ٣٠ ثانية. هذا سعر سوق عالمي، وسعر البيع والشراء في المحل عند كوبري غمازة الكبري يتأكد على واتساب 01115495323.</p>
+          </details>
+          <details>
             <summary>هل أسعار الذهب مكتوبة على الموقع؟</summary>
             <p class="faq-a">الموقع يعرض سعر السوق العالمي التقريبي للجرام ويتحدث كل ٣٠ ثانية. سعر البيع والشراء داخل المحل يتأكد عبر واتساب أو بالاتصال.</p>
           </details>
@@ -710,7 +736,8 @@
         <div class="footer-col">
           <h4>روابط</h4>
           <a href="/#about" data-go="about">من نحن</a>
-          <a href="/#collection" data-go="collection">المجموعة</a>
+          <a href="/collection/">المجموعة</a>
+          <a href="/prices/">سعر الذهب</a>
           <a href="/location/">المكان</a>
           <a href="/#branches" data-go="branches">فروعنا</a>
           <a href="/faq/" data-go="faq">أسئلة</a>
@@ -734,6 +761,6 @@
       <a class="dock-call" href="tel:01115495323">اتصال</a>
     </div>
 
-    <script src="./js/site.js?v=24"></script>
+    <script src="./js/site.js?v=25"></script>
   </body>
 </html>

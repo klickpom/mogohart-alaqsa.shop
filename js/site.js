@@ -158,6 +158,18 @@ if (priceTable) {
     rows[row.dataset.karat] = row;
   });
   const last = {};
+  let latest = null;
+  const gramInput = document.getElementById("gramInput");
+  const karatInput = document.getElementById("karatInput");
+  const calcOut = document.getElementById("calcOut");
+  const paintCalc = () => {
+    if (!calcOut) return;
+    const grams = Number(gramInput && gramInput.value);
+    const per = latest && latest[karatInput ? karatInput.value : "21"];
+    calcOut.textContent = grams > 0 && per ? `${money.format(per * grams)} ج.م` : "—";
+  };
+  gramInput?.addEventListener("input", paintCalc);
+  karatInput?.addEventListener("change", paintCalc);
 
   const paintNumber = (el, next) => {
     const from = Number(el.dataset.value || next);
@@ -192,6 +204,8 @@ if (priceTable) {
       if (!ounce || !egp) throw new Error("shape");
       const gram24 = (ounce / OUNCE_GRAMS) * egp;
       const values = { 24: gram24, 21: gram24 * (21 / 24), 18: gram24 * (18 / 24) };
+      latest = values;
+      paintCalc();
       Object.entries(values).forEach(([karat, value]) => {
         const row = rows[karat];
         const num = row.querySelector(".price-num");

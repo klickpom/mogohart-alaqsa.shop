@@ -8,4 +8,9 @@ RewriteRule ^ https://mogohart-alaqsa.shop%{REQUEST_URI} [R=301,L]
     Header set Content-Type "text/plain; charset=utf-8"
     Header set Cache-Control "public, max-age=86400"
   </FilesMatch>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  <FilesMatch "\.(css|js|jpg|jpeg|png|webp)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
 </IfModule>
