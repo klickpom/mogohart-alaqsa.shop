@@ -87,7 +87,7 @@ if (hero && heroSpot) {
 }
 
 const revealItems = document.querySelectorAll(
-  ".section-head, .product, .split, .center, .branch, .contact-card, .showcase-band, .footer-grid, .stat, .local-panel"
+  ".section-head, .product, .split, .center, .branch, .contact-card, .showcase-band, .footer-grid, .stat, .local-panel, .price-board"
 );
 
 revealItems.forEach((el, i) => {
@@ -144,4 +144,80 @@ if (canHover) {
       btn.style.transform = "";
     });
   });
+}
+
+const priceTable = document.getElementById("priceTable");
+if (priceTable) {
+  const OUNCE_GRAMS = 31.1034768;
+  const money = new Intl.NumberFormat("en-US", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+  const rows = {};
+  priceTable.querySelectorAll("[data-karat]").forEach((row) => {
+    rows[row.dataset.karat] = row;
+  });
+  const last = {};
+
+  const paintNumber = (el, next) => {
+    const from = Number(el.dataset.value || next);
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    el.dataset.value = String(next);
+    if (reduce) {
+      el.textContent = money.format(next);
+      return;
+    }
+    const start = performance.now();
+    const tick = (now) => {
+      const t = Math.min(1, (now - start) / 900);
+      const eased = 1 - (1 - t) ** 3;
+      el.textContent = money.format(from + (next - from) * eased);
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+
+  const refreshPrices = async () => {
+    const status = document.getElementById("priceUpdated");
+    try {
+      const [goldRes, fxRes] = await Promise.all([
+        fetch("https://api.gold-api.com/price/XAU"),
+        fetch("https://open.er-api.com/v6/latest/USD"),
+      ]);
+      if (!goldRes.ok || !fxRes.ok) throw new Error("network");
+      const gold = await goldRes.json();
+      const fx = await fxRes.json();
+      const ounce = Number(gold.price);
+      const egp = Number(fx.rates && fx.rates.EGP);
+      if (!ounce || !egp) throw new Error("shape");
+      const gram24 = (ounce / OUNCE_GRAMS) * egp;
+      const values = { 24: gram24, 21: gram24 * (21 / 24), 18: gram24 * (18 / 24) };
+      Object.entries(values).forEach(([karat, value]) => {
+        const row = rows[karat];
+        const num = row.querySelector(".price-num");
+        const delta = row.querySelector(".price-delta");
+        paintNumber(num, value);
+        const prev = last[karat];
+        if (prev) {
+          const diff = value - prev;
+          const pct = Math.abs((diff / prev) * 100);
+          delta.textContent = `${diff > 0 ? "▲" : diff < 0 ? "▼" : "•"} ${pct.toFixed(2)}%`;
+          delta.className = `price-delta ${diff > 0 ? "is-up" : diff < 0 ? "is-down" : ""}`;
+          row.classList.remove("flash-up", "flash-down");
+          void row.offsetWidth;
+          if (diff !== 0) row.classList.add(diff > 0 ? "flash-up" : "flash-down");
+        }
+        last[karat] = value;
+      });
+      document.getElementById("ozPrice").textContent = `$${money.format(ounce)}`;
+      document.getElementById("usdRate").textContent = money.format(egp);
+      const updated = gold.updatedAt ? new Date(gold.updatedAt) : new Date();
+      status.textContent = `آخر تحديث ${updated.toLocaleTimeString("ar-EG", { hour: "2-digit", minute: "2-digit" })}`;
+    } catch (error) {
+      status.textContent = "تعذر تحديث السعر. اسأل المحل على واتساب.";
+    }
+  };
+
+  refreshPrices();
+  window.setInterval(refreshPrices, 30000);
 }

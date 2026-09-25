@@ -45,7 +45,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="./images/hero-bg.jpeg" fetchpriority="high" />
-    <link rel="stylesheet" href="./css/site.css?v=22" />
+    <link rel="stylesheet" href="./css/site.css?v=24" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -217,7 +217,7 @@
                 "name": "هل أسعار الذهب مكتوبة على الموقع؟",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "الأسعار غير مثبتة على الموقع لأنها تتغير مع سعر الذهب. السعر يتأكد عبر واتساب أو بالاتصال بالمحل."
+                  "text": "الموقع يعرض سعر السوق العالمي التقريبي للجرام ويتحدث كل ٣٠ ثانية. سعر البيع والشراء داخل المحل يتأكد عبر واتساب أو بالاتصال."
                 }
               },
               {
@@ -314,6 +314,7 @@
       <nav class="nav-links" aria-label="التنقل الرئيسي">
         <button data-go="about">من نحن</button>
         <button data-go="collection">المجموعة</button>
+        <button data-go="prices">السعر</button>
         <button data-go="location">المكان</button>
         <button data-go="branches">فروعنا</button>
         <button data-go="contact">تواصل</button>
@@ -327,6 +328,7 @@
     <div class="drawer" id="drawer">
       <button data-go="about">من نحن</button>
       <button data-go="collection">المجموعة</button>
+      <button data-go="prices">السعر</button>
       <button data-go="location">المكان</button>
       <button data-go="branches">فروعنا</button>
       <button data-go="faq">أسئلة</button>
@@ -359,6 +361,45 @@
             <a class="btn btn-gold" href="#collection">تصفح المجموعة</a>
             <a class="btn btn-ghost" href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">تواصل واتساب</a>
           </div>
+        </div>
+      </section>
+
+      <section class="section price-board" id="prices">
+        <div class="center">
+          <p class="live-pill"><span class="live-dot" aria-hidden="true"></span> تحديث مباشر كل ٣٠ ثانية</p>
+          <h2 class="gold-text">سعر الذهب الآن</h2>
+          <p>سعر السوق العالمي التقريبي للجرام بالجنيه. سعر البيع والشراء في المحل يتأكد على واتساب.</p>
+        </div>
+        <div class="price-card">
+          <div class="price-meta">
+            <span>الأونصة <b id="ozPrice">—</b></span>
+            <span>الدولار <b id="usdRate">—</b></span>
+            <span id="priceUpdated">جاري التحديث</span>
+          </div>
+          <div class="price-table" id="priceTable">
+            <div class="price-row head">
+              <span>العيار</span>
+              <span>سعر الجرام</span>
+              <span>الحركة</span>
+            </div>
+            <div class="price-row" data-karat="24">
+              <span>جرام عيار ٢٤</span>
+              <b class="price-num">—</b>
+              <span class="price-delta">—</span>
+            </div>
+            <div class="price-row is-main" data-karat="21">
+              <span>جرام عيار ٢١ <small>عيار المحل</small></span>
+              <b class="price-num">—</b>
+              <span class="price-delta">—</span>
+            </div>
+            <div class="price-row" data-karat="18">
+              <span>جرام عيار ١٨</span>
+              <b class="price-num">—</b>
+              <span class="price-delta">—</span>
+            </div>
+          </div>
+          <p class="price-note">الرقم محسوب من سعر الأونصة العالمي وسعر الدولار، ويتغير مع السوق. مش سعر القطعة في المحل.</p>
+          <a class="btn btn-gold" href="https://wa.me/201115495323?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%B3%D8%B9%D8%B1%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AD%D9%84" target="_blank" rel="noopener noreferrer">اسأل عن سعر المحل</a>
         </div>
       </section>
 
@@ -650,7 +691,7 @@
           </details>
           <details>
             <summary>هل أسعار الذهب مكتوبة على الموقع؟</summary>
-            <p class="faq-a">الأسعار غير مثبتة على الموقع لأنها تتغير مع سعر الذهب. السعر يتأكد عبر واتساب أو بالاتصال بالمحل.</p>
+            <p class="faq-a">الموقع يعرض سعر السوق العالمي التقريبي للجرام ويتحدث كل ٣٠ ثانية. سعر البيع والشراء داخل المحل يتأكد عبر واتساب أو بالاتصال.</p>
           </details>
           <details>
             <summary>من صاحب مجوهرات الأقصى؟</summary>
@@ -693,6 +734,6 @@
       <a class="dock-call" href="tel:01115495323">اتصال</a>
     </div>
 
-    <script src="./js/site.js?v=22"></script>
+    <script src="./js/site.js?v=24"></script>
   </body>
 </html>
