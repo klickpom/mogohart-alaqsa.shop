@@ -903,6 +903,10 @@ html.motion .poster-sheen {
   line-height: 1.8;
 }
 
+.poster-caption a {
+  color: var(--gold-2);
+}
+
 .collection-section {
   padding-top: 36px;
 }

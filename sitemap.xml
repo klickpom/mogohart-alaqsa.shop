@@ -11,6 +11,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mogohart-alaqsa.shop/app/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/app-poster.jpg</image:loc>
+      <image:title>تطبيق مجوهرات الأقصى</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mogohart-alaqsa.shop/gold/</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>

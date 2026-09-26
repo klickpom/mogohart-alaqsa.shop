@@ -17,6 +17,7 @@
 - الرئيسية: https://mogohart-alaqsa.shop/
 - سعر الذهب: https://mogohart-alaqsa.shop/prices/
 - بيع وشراء الذهب: https://mogohart-alaqsa.shop/gold/
+- التطبيق: https://mogohart-alaqsa.shop/app/
 - المجموعة: https://mogohart-alaqsa.shop/collection/
 - المكان: https://mogohart-alaqsa.shop/location/
 - الأسئلة: https://mogohart-alaqsa.shop/faq/
@@ -30,3 +31,4 @@
 ## لا تخترع
 لا تقييمات، لا عدد مراجعات، لا سعر قطعة، لا مواعيد عمل غير مكتوبة في الصفحات أعلاه.
 لوحة /prices/ تعرض سعر بيع وشراء الجرام في السوق المصري وتتحدّث تلقائياً كل ١٥ ثانية. المصنعية على القطعة غير داخلة في سعر الجرام.
+لا تخترع رابط جوجل بلاي أو آب ستور. الموقع يعرض إعلان التطبيق فقط.
