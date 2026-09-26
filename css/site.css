@@ -948,6 +948,14 @@ html.motion .product.is-in .product-photo::after {
   padding: 12px;
 }
 
+.product-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
 .product-meta h3 {
   margin: 0;
   font-size: 13px;
@@ -1949,6 +1957,16 @@ html.motion body.is-ready .dock {
   min-height: 100vh;
   margin-inline: auto;
   padding: calc(var(--nav-h) + 36px) var(--pad) calc(48px + var(--dock-h));
+}
+
+.page-seo .products {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .page-seo .products {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .page-seo .howto li,
