@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ar_EG" />
     <link rel="icon" href="/images/logo.png" />
-    <link rel="stylesheet" href="/css/site.css?v=27" />
+    <link rel="stylesheet" href="/css/site.css?v=28" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -77,17 +77,37 @@
     </script>
   </head>
   <body class="is-ready">
-    <header class="nav is-scrolled">
+    <header class="nav is-scrolled" id="nav">
       <a class="brand" href="/">
         <img src="/images/logo.png" alt="شعار مجوهرات الأقصى" />
-        <span>الأقصى</span>
+        <span class="brand-copy"><b>مجوهرات الأقصى</b><small>بالإخصاص</small></span>
       </a>
       <nav class="nav-links" aria-label="التنقل">
         <a href="/">الرئيسية</a>
+        <a href="/collection/">المجموعة</a>
         <a href="/prices/">السعر</a>
         <a href="/location/">المكان</a>
+        <a href="/faq/" aria-current="page">أسئلة</a>
+        <a href="/#branches">الفروع</a>
       </nav>
+      <div class="nav-end">
+        <a class="nav-quote" href="/prices/">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span class="q-label">عيار ٢١</span>
+          <b id="tickSell">—</b>
+        </a>
+        <a class="nav-pill" href="/prices/">السعر الآن</a>
+        <button class="nav-toggle" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false"><span></span></button>
+      </div>
     </header>
+    <div class="drawer" id="drawer">
+      <a href="/">الرئيسية</a>
+      <a href="/collection/">المجموعة</a>
+      <a href="/prices/">السعر</a>
+      <a href="/location/">المكان</a>
+      <a href="/faq/">أسئلة</a>
+      <a href="/#branches">الفروع</a>
+    </div>
     <main class="page-seo">
       <nav class="crumbs" aria-label="مسار الصفحة">
         <a href="/">الرئيسية</a>
@@ -143,5 +163,6 @@
       <a class="dock-wa" href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">واتساب</a>
       <a class="dock-call" href="tel:01115495323">اتصال</a>
     </div>
+    <script src="/js/site.js?v=28"></script>
   </body>
 </html>

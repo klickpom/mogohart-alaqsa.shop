@@ -72,6 +72,10 @@ document.querySelectorAll("[data-go]").forEach((el) => {
   });
 });
 
+document.querySelectorAll(".drawer a").forEach((el) => {
+  el.addEventListener("click", closeMenu);
+});
+
 if (hero && heroSpot) {
   hero.addEventListener(
     "pointermove",
@@ -146,13 +150,6 @@ if (canHover) {
   });
 }
 
-const liveBar = document.createElement("div");
-liveBar.id = "liveBar";
-liveBar.className = "live-bar";
-liveBar.innerHTML = '<span class="live-dot" aria-hidden="true"></span><span>عيار ٢١</span><b id="tickSell">—</b><em>بيع</em><b id="tickBuy">—</b><em>شراء</em>';
-document.body.prepend(liveBar);
-document.body.classList.add("has-live-bar");
-
 const priceTable = document.getElementById("priceTable");
 const money = new Intl.NumberFormat("en-US", {
   minimumFractionDigits: 2,
@@ -195,7 +192,18 @@ const paintNumber = (el, next) => {
   requestAnimationFrame(tick);
 };
 
+const SYNC_EVERY = 15;
+let syncLeft = SYNC_EVERY;
+const paintSync = () => {
+  const label = document.getElementById("syncLeft");
+  const ring = document.querySelector(".auto-ring");
+  if (label) label.textContent = String(syncLeft);
+  if (ring) ring.style.setProperty("--p", `${((SYNC_EVERY - syncLeft) / SYNC_EVERY) * 100}%`);
+};
+
 const refreshPrices = async () => {
+  syncLeft = SYNC_EVERY;
+  paintSync();
   const status = document.getElementById("priceUpdated");
   try {
     const res = await fetch("https://golden-circle.net/api/current-prices");
@@ -211,7 +219,6 @@ const refreshPrices = async () => {
     latest = values;
     paintCalc();
     paintNumber(document.getElementById("tickSell"), values[21].sell);
-    paintNumber(document.getElementById("tickBuy"), values[21].buy);
     Object.entries(values).forEach(([karat, quote]) => {
       const row = rows[karat];
       if (!row) return;
@@ -258,7 +265,6 @@ const refreshPrices = async () => {
       latest = values;
       paintCalc();
       paintNumber(document.getElementById("tickSell"), values[21].sell);
-      paintNumber(document.getElementById("tickBuy"), values[21].buy);
       Object.entries(values).forEach(([karat, quote]) => {
         const row = rows[karat];
         if (!row) return;
@@ -272,4 +278,8 @@ const refreshPrices = async () => {
 };
 
 refreshPrices();
-window.setInterval(refreshPrices, 15000);
+window.setInterval(() => {
+  syncLeft -= 1;
+  if (syncLeft <= 0) refreshPrices();
+  else paintSync();
+}, 1000);

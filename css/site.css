@@ -10,7 +10,7 @@
   --line: rgba(212, 175, 55, 0.22);
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
-  --nav-h: calc(64px + var(--safe-top));
+  --nav-h: calc(74px + var(--safe-top));
   --dock-h: calc(64px + var(--safe-bottom));
   --pad: clamp(16px, 4.6vw, 40px);
   --radius: 18px;
@@ -306,22 +306,19 @@ html.motion body:not(.is-ready) .dock {
   left: 0;
   z-index: 50;
   height: var(--nav-h);
-  padding: var(--safe-top) var(--pad) 0;
+  padding: var(--safe-top) clamp(14px, 3vw, 36px) 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  background: transparent;
-  transition: background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
-  border-bottom: 1px solid transparent;
+  gap: 18px;
+  background: rgba(7, 15, 12, 0.92);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
 }
 
 .nav.is-scrolled {
-  background: rgba(7, 15, 12, 0.88);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom-color: var(--line);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  background: rgba(7, 15, 12, 0.96);
 }
 
 .brand {
@@ -329,29 +326,86 @@ html.motion body:not(.is-ready) .dock {
   align-items: center;
   gap: 10px;
   min-width: 0;
+  margin-inline-end: auto;
 }
 
 .brand img {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
 }
 
-.brand span {
+.brand-copy {
+  display: grid;
+  line-height: 1.05;
+  text-align: right;
+}
+
+.brand-copy b {
   font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-weight: 800;
   white-space: nowrap;
+}
+
+.brand-copy small {
+  color: var(--gold-2);
+  font-size: 11px;
+  font-weight: 700;
 }
 
 .nav-links {
   display: none;
   align-items: center;
-  gap: clamp(10px, 2.2vw, 28px);
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  gap: clamp(14px, 1.8vw, 26px);
+  justify-content: center;
+}
+
+.nav-end {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.nav-quote {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 38px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(13, 31, 21, 0.8);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.nav-quote b {
+  color: var(--gold-2);
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+}
+
+.nav-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--gold-2), var(--gold));
+  color: #14110a;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(212, 175, 55, 0.22);
+}
+
+.nav-links a[aria-current="page"] {
+  color: var(--gold-2);
 }
 
 .nav-links a,
@@ -1358,7 +1412,29 @@ html.motion .product.is-in .product-photo::after {
   }
 }
 
-@media (min-width: 720px) {
+@media (max-width: 719px) {
+  .nav-pill {
+    display: none;
+  }
+
+  .brand img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-copy b {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 419px) {
+  .brand-copy small,
+  .nav-quote .q-label {
+    display: none;
+  }
+}
+
+@media (min-width: 980px) {
   .nav-toggle,
   .drawer,
   .dock {
@@ -1367,7 +1443,15 @@ html.motion .product.is-in .product-photo::after {
 
   .nav-links {
     display: flex;
+    flex: 1;
   }
+
+  .brand {
+    margin-inline-end: 0;
+  }
+}
+
+@media (min-width: 720px) {
 
   .hero {
     align-items: center;
@@ -2023,6 +2107,35 @@ noscript .citation {
   color: var(--muted);
   font-size: 13px;
   line-height: 1.8;
+}
+
+.auto-sync {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 18px 8px;
+  min-height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(61, 214, 140, 0.35);
+  background: rgba(61, 214, 140, 0.08);
+  color: #b7f7cf;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.auto-ring {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: conic-gradient(#3dd68c var(--p, 0%), rgba(255, 255, 255, 0.16) 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 0);
+  mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 0);
+}
+
+.auto-sync b {
+  color: #fff;
+  font-variant-numeric: tabular-nums;
 }
 
 .price-card .btn {

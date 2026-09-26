@@ -45,7 +45,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="./images/hero-bg.jpeg" fetchpriority="high" />
-    <link rel="stylesheet" href="./css/site.css?v=27" />
+    <link rel="stylesheet" href="./css/site.css?v=28" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -317,20 +317,27 @@
     <header class="nav" id="nav">
       <a class="brand" href="#top">
         <img src="./images/logo.png" alt="شعار مجوهرات الأقصى" />
-        <span>الأقصى</span>
+        <span class="brand-copy"><b>مجوهرات الأقصى</b><small>بالإخصاص</small></span>
       </a>
       <nav class="nav-links" aria-label="التنقل الرئيسي">
         <button data-go="about">من نحن</button>
         <button data-go="collection">المجموعة</button>
-        <a href="/prices/">السعر</a>
+        <a href="#prices">السعر</a>
         <button data-go="location">المكان</button>
-        <button data-go="branches">فروعنا</button>
+        <button data-go="branches">الفروع</button>
         <button data-go="contact">تواصل</button>
-        <a href="https://www.facebook.com/mokhtarewis73m/" target="_blank" rel="noopener noreferrer">فيسبوك</a>
       </nav>
-      <button class="nav-toggle" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false">
-        <span></span>
-      </button>
+      <div class="nav-end">
+        <a class="nav-quote" href="#prices">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span class="q-label">عيار ٢١</span>
+          <b id="tickSell">—</b>
+        </a>
+        <a class="nav-pill" href="#prices">السعر الآن</a>
+        <button class="nav-toggle" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <div class="drawer" id="drawer">
@@ -422,8 +429,13 @@
             </label>
             <p>قيمة البيع <b id="calcOut">—</b></p>
           </form>
-          <p class="price-note">سعر الجرام في السوق المصري الآن. المصنعية على القطعة تتأكد في المحل.</p>
-          <a class="btn btn-gold" href="https://wa.me/201115495323?text=%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%B3%D8%B9%D8%B1%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D8%AD%D9%84" target="_blank" rel="noopener noreferrer">اسأل عن سعر المحل</a>
+          <p class="price-note">السعر يتحدث تلقائياً كل ١٥ ثانية. المصنعية على القطعة غير داخلة في سعر الجرام.</p>
+          <div class="auto-sync" id="autoSync">
+            <span class="auto-ring" aria-hidden="true"></span>
+            <span>تحديث تلقائي</span>
+            <b id="syncLeft">15</b>
+            <span>ث</span>
+          </div>
           <a class="more-link" href="/prices/">صفحة سعر الذهب في الإخصاص</a>
         </div>
       </section>
@@ -555,7 +567,7 @@
         </nav>
         <h2 class="gold-text">محل المجوهرات عند كوبري غمازة الكبري</h2>
         <p class="citation" id="about-brand">مجوهرات الأقصى بالإخصاص محل لبيع وشراء الذهب والمجوهرات عيار ٢١ قيراط. العنوان: كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة. للتواصل واتساب 01115495323.</p>
-        <p class="lede seo-copy">لو بتدور على محل ذهب في الإخصاص أو الصف أو عند كوبري غمازة الكبري، الفرع الأول هنا على الخريطة، والذهب يُأكد سعره في المحل أو على واتساب لأن السعر بيتغير.</p>
+        <p class="lede seo-copy">لو بتدور على محل ذهب في الإخصاص أو الصف أو عند كوبري غمازة الكبري، الفرع الأول هنا على الخريطة، وسعر الجرام يظهر على اللوحة ويتحدث تلقائياً.</p>
         <ol class="howto" id="howto-visit">
           <li id="howto-1"><b>افتح الخريطة.</b> موقع فرع الإخصاص على جوجل من الرابط المباشر.</li>
           <li id="howto-2"><b>اتبع الاتجاهات.</b> من مكانك إلى إحداثيات المحل 29.7024067, 31.2877561.</li>
@@ -764,6 +776,6 @@
       <a class="dock-call" href="tel:01115495323">اتصال</a>
     </div>
 
-    <script src="./js/site.js?v=27"></script>
+    <script src="./js/site.js?v=28"></script>
   </body>
 </html>
