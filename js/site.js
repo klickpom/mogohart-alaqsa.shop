@@ -91,7 +91,7 @@ if (hero && heroSpot) {
 }
 
 const revealItems = document.querySelectorAll(
-  ".section-head, .product, .split, .center, .branch, .contact-card, .showcase-band, .footer-grid, .stat, .local-panel, .price-board"
+  ".section-head, .product, .split, .center, .branch, .contact-card, .showcase-band, .footer-grid, .stat, .local-panel, .price-board, .poster-float"
 );
 
 revealItems.forEach((el, i) => {
@@ -136,6 +136,22 @@ if (canHover) {
       card.style.transform = "";
     });
   });
+
+  const poster = document.getElementById("posterFrame");
+  const stage = poster?.querySelector(".poster-stage");
+  if (poster && stage) {
+    poster.addEventListener("pointermove", (event) => {
+      const box = poster.getBoundingClientRect();
+      const x = (event.clientX - box.left) / box.width - 0.5;
+      const y = (event.clientY - box.top) / box.height - 0.5;
+      stage.style.setProperty("--rx", `${x * 8}deg`);
+      stage.style.setProperty("--ry", `${y * -6}deg`);
+    });
+    poster.addEventListener("pointerleave", () => {
+      stage.style.setProperty("--rx", "0deg");
+      stage.style.setProperty("--ry", "0deg");
+    });
+  }
 
   document.querySelectorAll(".btn-gold").forEach((btn) => {
     btn.addEventListener("pointermove", (event) => {

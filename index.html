@@ -45,7 +45,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="./images/hero-bg.jpeg" fetchpriority="high" />
-    <link rel="stylesheet" href="./css/site.css?v=32" />
+    <link rel="stylesheet" href="./css/site.css?v=33" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -404,10 +404,15 @@
       </section>
 
       <section class="section app-poster" id="app">
-        <figure class="poster-frame">
-          <img src="./images/app-poster.jpg" width="1024" height="1024" alt="تطبيقنا الجديد متاح الآن. مجوهرات الأقصى." />
-          <figcaption class="poster-caption">تطبيق مجوهرات الأقصى لسعر الجرام والسبائك.</figcaption>
-        </figure>
+        <div class="poster-float">
+          <figure class="poster-frame" id="posterFrame">
+            <div class="poster-stage">
+              <img src="./images/app-poster.jpg" width="1024" height="1024" alt="تطبيقنا الجديد متاح الآن. مجوهرات الأقصى." />
+              <span class="poster-sheen" aria-hidden="true"></span>
+            </div>
+            <figcaption class="poster-caption">تطبيق مجوهرات الأقصى لسعر الجرام والسبائك.</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="section price-board" id="prices">
@@ -820,6 +825,6 @@
       <a class="dock-call" href="tel:01115495323">اتصال</a>
     </div>
 
-    <script src="./js/site.js?v=29"></script>
+    <script src="./js/site.js?v=30"></script>
   </body>
 </html>
