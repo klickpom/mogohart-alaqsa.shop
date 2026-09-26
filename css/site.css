@@ -325,7 +325,8 @@ html.motion body:not(.is-ready) .dock {
   display: flex;
   align-items: center;
   gap: 10px;
-  min-width: 0;
+  flex: 0 0 auto;
+  min-width: max-content;
   margin-inline-end: auto;
 }
 
@@ -1443,7 +1444,8 @@ html.motion .product.is-in .product-photo::after {
 
   .nav-links {
     display: flex;
-    flex: 1;
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .brand {
@@ -1943,8 +1945,17 @@ html.motion body.is-ready .dock {
 }
 
 .page-seo {
+  width: min(820px, 100%);
   min-height: 100vh;
-  padding: calc(var(--nav-h) + 28px) var(--pad) calc(40px + var(--dock-h));
+  margin-inline: auto;
+  padding: calc(var(--nav-h) + 36px) var(--pad) calc(48px + var(--dock-h));
+}
+
+.page-seo .howto li,
+.page-seo .faq-list details {
+  background:
+    radial-gradient(120% 80% at 100% 0%, rgba(212, 175, 55, 0.1), transparent 42%),
+    rgba(13, 31, 21, 0.72);
 }
 
 .page-seo .hero-logo {
