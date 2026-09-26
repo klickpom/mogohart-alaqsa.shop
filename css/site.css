@@ -834,6 +834,37 @@ html.motion .btn-gold::after {
   padding: 56px var(--pad);
 }
 
+.app-poster {
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.poster-frame {
+  width: min(100%, 760px);
+  margin: 22px auto 0;
+  padding: 8px;
+  border-radius: 28px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background:
+    radial-gradient(90% 70% at 50% 0%, rgba(212, 175, 55, 0.2), transparent 58%),
+    #070f0c;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
+}
+
+.poster-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+}
+
+.poster-caption {
+  width: min(100%, 36rem);
+  margin: 16px auto 0;
+  text-align: center;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
 .collection-section {
   padding-top: 36px;
 }
