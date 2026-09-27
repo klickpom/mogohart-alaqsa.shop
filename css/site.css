@@ -907,6 +907,20 @@ html.motion .poster-sheen {
   color: var(--gold-2);
 }
 
+.app-page .citation {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.app-soon {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--gold-2);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
 .collection-section {
   padding-top: 36px;
 }
