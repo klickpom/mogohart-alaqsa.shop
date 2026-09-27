@@ -921,6 +921,20 @@ html.motion .poster-sheen {
   line-height: 1.2;
 }
 
+.piece-photo {
+  width: min(100%, 440px);
+  margin: 18px 0 8px;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.piece-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .collection-section {
   padding-top: 36px;
 }

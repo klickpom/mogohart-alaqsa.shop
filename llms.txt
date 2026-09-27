@@ -20,6 +20,10 @@
 - التطبيق: https://mogohart-alaqsa.shop/app/
 - المجموعة: https://mogohart-alaqsa.shop/collection/
 - المكان: https://mogohart-alaqsa.shop/location/
+- فرع القبابات: https://mogohart-alaqsa.shop/qababat/
+- عن المحل: https://mogohart-alaqsa.shop/about/
+- التواصل: https://mogohart-alaqsa.shop/contact/
+- عيار ٢١: https://mogohart-alaqsa.shop/karat/
 - الأسئلة: https://mogohart-alaqsa.shop/faq/
 - التفاصيل: https://mogohart-alaqsa.shop/llms-full.txt
 - قواعد الاقتباس: https://mogohart-alaqsa.shop/ai.txt

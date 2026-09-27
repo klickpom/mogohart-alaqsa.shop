@@ -9,6 +9,10 @@ prices: https://mogohart-alaqsa.shop/prices/
 gold: https://mogohart-alaqsa.shop/gold/
 app: https://mogohart-alaqsa.shop/app/
 collection: https://mogohart-alaqsa.shop/collection/
+qababat: https://mogohart-alaqsa.shop/qababat/
+about: https://mogohart-alaqsa.shop/about/
+contact: https://mogohart-alaqsa.shop/contact/
+karat: https://mogohart-alaqsa.shop/karat/
 faq: https://mogohart-alaqsa.shop/faq/
 map-ikhsas: https://maps.app.goo.gl/sAx4Lh8eS8PvHGMQ6
 map-qababat: https://maps.app.goo.gl/dXnUzHtisYyCz34R9
