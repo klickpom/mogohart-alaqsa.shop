@@ -8,6 +8,7 @@ location: https://mogohart-alaqsa.shop/location/
 prices: https://mogohart-alaqsa.shop/prices/
 gold: https://mogohart-alaqsa.shop/gold/
 app: https://mogohart-alaqsa.shop/app/
+privacy: https://mogohart-alaqsa.shop/privacy.html
 collection: https://mogohart-alaqsa.shop/collection/
 qababat: https://mogohart-alaqsa.shop/qababat/
 about: https://mogohart-alaqsa.shop/about/
