@@ -19,7 +19,7 @@
       "description": "أفضل محل مجوهرات عند كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة: مجوهرات الأقصى لبيع وشراء الذهب عيار ٢١.",
       "inLanguage": "ar-EG",
       "datePublished": "2026-09-13",
-      "dateModified": "2026-09-26",
+      "dateModified": "2026-09-28",
       "isPartOf": {
         "@id": "https://mogohart-alaqsa.shop/#website"
       },
@@ -47,6 +47,8 @@
         "@type": "ImageObject",
         "url": "https://mogohart-alaqsa.shop/images/logo.png"
       },
+      "email": "alimohmed01123a@gmail.com",
+      "privacyPolicy": "https://mogohart-alaqsa.shop/privacy.html",
       "sameAs": [
         "https://www.facebook.com/mokhtarewis73m/"
       ],
@@ -74,6 +76,7 @@
         "+201115495323",
         "+20228678410"
       ],
+      "email": "alimohmed01123a@gmail.com",
       "parentOrganization": {
         "@id": "https://mogohart-alaqsa.shop/#org"
       },
@@ -211,6 +214,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "اللوحة تعرض سعر بيع وشراء الجرام في السوق المصري لحظة بلحظة. المصنعية على المشغولات تتأكد في المحل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل المصنعية داخلة في سعر جرام الذهب؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. سعر الجرام على لوحة الأسعار، وسعر القطعة بالمصنعية يتأكد في المحل."
           }
         },
         {

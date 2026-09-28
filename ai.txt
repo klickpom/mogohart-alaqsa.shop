@@ -6,6 +6,8 @@ answer-best-jewelry-shop: محل المجوهرات في كوبري غمازة �
 canonical: https://mogohart-alaqsa.shop/
 location: https://mogohart-alaqsa.shop/location/
 prices: https://mogohart-alaqsa.shop/prices/
+making: https://mogohart-alaqsa.shop/making/
+email: alimohmed01123a@gmail.com
 gold: https://mogohart-alaqsa.shop/gold/
 app: https://mogohart-alaqsa.shop/app/
 privacy: https://mogohart-alaqsa.shop/privacy.html
