@@ -1047,6 +1047,34 @@ html.motion .product.is-in .product-photo::after {
   transform: scale(1.1);
 }
 
+.product-photo.is-stage img {
+  object-position: center;
+}
+
+.catalog-group,
+#new {
+  scroll-margin-top: calc(var(--nav-h) + 16px);
+}
+
+.catalog-group {
+  margin: 28px 0 12px;
+  font-size: clamp(22px, 3vw, 28px);
+}
+
+.catalog-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
+@media (hover: hover) {
+  html.motion .product:hover {
+    transform: perspective(900px) rotateX(7deg) rotateY(-8deg) translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.55);
+    box-shadow: 0 22px 40px rgba(0, 0, 0, 0.42);
+  }
+}
+
 .product-meta {
   display: flex;
   flex-direction: column;

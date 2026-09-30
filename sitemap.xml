@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mogohart-alaqsa.shop/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -33,8 +33,8 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc></loc>
-    <lastmod>2026-09-28</lastmod>
+    <loc>https://mogohart-alaqsa.shop/collection/</loc>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -95,7 +95,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/heart/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -105,7 +105,7 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/leaf-set/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -115,7 +115,7 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/pave-bracelet/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -125,7 +125,7 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/curve-bangles/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -135,7 +135,7 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/bangle-ring/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -145,7 +145,7 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/gold-bars/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -155,7 +155,7 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/filigree-ring/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -165,7 +165,7 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/crescent-earrings/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -175,7 +175,7 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/ornate-necklace/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -185,7 +185,7 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/tassel-necklace/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -195,7 +195,7 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/collection/teardrop/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -205,25 +205,25 @@
     </image:image>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/about/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/contact/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/qababat/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc></loc>
+    <loc>https://mogohart-alaqsa.shop/karat/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -255,5 +255,345 @@
   <url>
     <loc>https://mogohart-alaqsa.shop/schema.jsonld</loc>
     <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/ball-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-ball-ring.jpg</image:loc>
+      <image:title>خاتم كرتين مرصع</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/bead-necklace/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-bead-necklace.jpg</image:loc>
+      <image:title>عقد خرز ذهبي</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/bloom-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-bloom-ring.jpg</image:loc>
+      <image:title>خاتم زهرة كبيرة</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/bow-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-bow-ring.jpg</image:loc>
+      <image:title>خاتم فيونكة</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/box-set/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-box-set.jpg</image:loc>
+      <image:title>طقم حلق وخواتم</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/butterfly-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-butterfly-ring.jpg</image:loc>
+      <image:title>خاتم فراشة شبك</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/chandelier-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-chandelier-earrings.jpg</image:loc>
+      <image:title>حلق دمعة مرصع</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/coin-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-coin-earrings.jpg</image:loc>
+      <image:title>حلق عملة ذهب</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/drop-cutout-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-drop-cutout-earrings.jpg</image:loc>
+      <image:title>حلق دمعة مفرغ</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/fan-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-fan-earrings.jpg</image:loc>
+      <image:title>حلق مروحة ذهب</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/filigree-leaf-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-filigree-leaf-earrings.jpg</image:loc>
+      <image:title>حلق ورقة فيليغري</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/flower-bangle/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-flower-bangle.jpg</image:loc>
+      <image:title>إسورة زهرة</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/gem-flower-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-gem-flower-ring.jpg</image:loc>
+      <image:title>خاتم زهرة ملونة</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/heart-box-rings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-heart-box-rings.jpg</image:loc>
+      <image:title>طقم خواتم علبة قلب</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/heart-case-set/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-heart-case-set.jpg</image:loc>
+      <image:title>طقم علبة قلب</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/heart-mesh-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-heart-mesh-ring.jpg</image:loc>
+      <image:title>خاتم قلب شبك</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/hex-lantern-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-hex-lantern-earrings.jpg</image:loc>
+      <image:title>حلق سداسي مذهب</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/hex-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-hex-ring.jpg</image:loc>
+      <image:title>خاتم سداسي</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/interlock-rings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-interlock-rings.jpg</image:loc>
+      <image:title>دبل متشابكة</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/knot-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-knot-ring.jpg</image:loc>
+      <image:title>خاتم عقدة مرصع</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/ladder-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-ladder-earrings.jpg</image:loc>
+      <image:title>حلق سلّم ذهبي</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/leaf-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-leaf-earrings.jpg</image:loc>
+      <image:title>حلق ورق مفرغ</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/mesh-flower-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-mesh-flower-ring.jpg</image:loc>
+      <image:title>خاتم زهرة شبك</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/open-heart-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-open-heart-ring.jpg</image:loc>
+      <image:title>خاتم قلب مفرغ</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/oval-cutout-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-oval-cutout-earrings.jpg</image:loc>
+      <image:title>حلق بيضاوي مفرغ</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/oval-lattice-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-oval-lattice-earrings.jpg</image:loc>
+      <image:title>حلق بيضاوي مخرم</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/peacock-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-peacock-earrings.jpg</image:loc>
+      <image:title>حلق طاووس</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/rose-hoops/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-rose-hoops.jpg</image:loc>
+      <image:title>حلق سداسي ورد</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/row-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-row-ring.jpg</image:loc>
+      <image:title>خاتم صفوف مرصعة</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/swirl-necklace/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-swirl-necklace.jpg</image:loc>
+      <image:title>عقد حلزوني</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/swirl-ring/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-swirl-ring.jpg</image:loc>
+      <image:title>خاتم دوامة مرصع</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/triangle-necklace/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-triangle-necklace.jpg</image:loc>
+      <image:title>عقد مثلث</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/twist-bangles/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-twist-bangles.jpg</image:loc>
+      <image:title>أساور مجدولة</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mogohart-alaqsa.shop/collection/wave-earrings/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://mogohart-alaqsa.shop/images/catalog-wave-earrings.jpg</image:loc>
+      <image:title>حلق مموج</image:title>
+    </image:image>
   </url>
 </urlset>
