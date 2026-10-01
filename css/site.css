@@ -845,7 +845,7 @@ html.motion .btn-gold::after {
 }
 
 .poster-float {
-  width: min(100%, 760px);
+  width: min(100%, 440px);
   margin: 22px auto 0;
   perspective: 1200px;
 }
@@ -2771,4 +2771,28 @@ section.hero.cine h1 {
     padding: 0 10px;
     font-size: 12px;
   }
+}
+
+a.poster-stage {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.poster-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.poster-caption .btn-gold {
+  color: #14110a;
+  min-width: 220px;
+  margin-top: 6px;
+}
+
+.poster-caption span {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
 }
