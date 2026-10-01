@@ -192,7 +192,6 @@ karatInput?.addEventListener("change", paintCalc);
 const paintHeroQuotes = (values) => {
   paintNumber(document.getElementById("heroSell24"), values[24].sell);
   paintNumber(document.getElementById("heroSell21"), values[21].sell);
-  paintNumber(document.getElementById("heroSell18"), values[18].sell);
 };
 
 const paintNumber = (el, next) => {
@@ -236,7 +235,6 @@ const refreshPrices = async () => {
     const values = {
       24: { buy: Number(p.buy_24), sell: Number(p.sell_24), change: Number(p.sell_change_24) },
       21: { buy: Number(p.buy_21), sell: Number(p.sell_21), change: Number(p.sell_change_21) },
-      18: { buy: Number(p.buy_18), sell: Number(p.sell_18), change: Number(p.sell_change_18) },
     };
     latest = values;
     paintCalc();
@@ -283,7 +281,6 @@ const refreshPrices = async () => {
       const values = {
         24: { buy: gram24, sell: gram24, change: 0 },
         21: { buy: gram24 * (21 / 24), sell: gram24 * (21 / 24), change: 0 },
-        18: { buy: gram24 * (18 / 24), sell: gram24 * (18 / 24), change: 0 },
       };
       latest = values;
       paintCalc();

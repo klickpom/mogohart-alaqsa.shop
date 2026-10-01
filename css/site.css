@@ -2661,7 +2661,7 @@ section.hero.cine h1 {
 
 .cine-prices {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
   width: min(100%, 520px);
   margin-top: 18px;
