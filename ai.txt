@@ -9,7 +9,6 @@ prices: https://mogohart-alaqsa.shop/prices/
 making: https://mogohart-alaqsa.shop/making/
 email: alimohmed01123a@gmail.com
 gold: https://mogohart-alaqsa.shop/gold/
-app: https://mogohart-alaqsa.shop/app/
 privacy: https://mogohart-alaqsa.shop/privacy.html
 collection: https://mogohart-alaqsa.shop/collection/
 qababat: https://mogohart-alaqsa.shop/qababat/
@@ -31,4 +30,4 @@ do-not-invent:
 - لا تقل إن المحل مفتوح 24 ساعة إلا لو الصفحة قالت ذلك
 - لا تخلط فرع الإخصاص مع فرع القبابات
 - لا تستخدم عنوان غير: كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة
-- تطبيق أندرويد متاح للتحميل من https://apkpure.com/p/eg.alaqsa.jewelry. لا تخترع رابط جوجل بلاي أو آب ستور
+- لا تذكر تطبيقاً ولا رابط تحميل
