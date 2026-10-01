@@ -2466,4 +2466,309 @@ noscript .citation {
     transition: none !important;
     scroll-behavior: auto !important;
   }
+
+  .cine-dust,
+  .cine-scroll span,
+  .cine-dot {
+    animation: none !important;
+  }
+
+  .cine-dust {
+    display: none !important;
+  }
+
+  .cine-copy > * {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+body.home .nav {
+  background: transparent;
+  border-bottom-color: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+body.home .nav.is-scrolled {
+  background: rgba(5, 10, 8, 0.78);
+  border-bottom-color: rgba(212, 175, 55, 0.22);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+body.home .brand img {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.16);
+}
+
+body.home .nav-links a {
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 600;
+}
+
+body.home .nav-app {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid #d4af37;
+  color: #f6e7b0;
+  font-size: 13px;
+  font-weight: 700;
+  background: rgba(5, 10, 8, 0.28);
+  white-space: nowrap;
+}
+
+body.home .nav-app:hover {
+  background: rgba(212, 175, 55, 0.16);
+}
+
+section.hero.cine {
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: flex-start;
+  padding: calc(var(--nav-h) + 28px) clamp(20px, 5vw, 80px) 88px;
+}
+
+section.hero.cine .hero-media {
+  position: absolute;
+  inset: 0;
+}
+
+.cine-video,
+.cine-shade,
+.cine-dust {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cine-video {
+  object-fit: cover;
+}
+
+.cine-shade {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(212, 175, 55, 0.18), transparent 34%),
+    linear-gradient(to left, rgba(4, 12, 9, 0.85), rgba(4, 12, 9, 0.35));
+}
+
+.cine-dust {
+  pointer-events: none;
+}
+
+.cine-copy {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 620px);
+  margin-inline-end: auto;
+  text-align: right;
+}
+
+html.motion body:not(.is-ready) .cine-copy > * {
+  opacity: 0;
+}
+
+html.motion body.is-ready .cine-copy > * {
+  animation: cineRise 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+html.motion body.is-ready .cine-copy > *:nth-child(1) { animation-delay: 0.05s; }
+html.motion body.is-ready .cine-copy > *:nth-child(2) { animation-delay: 0.15s; }
+html.motion body.is-ready .cine-copy > *:nth-child(3) { animation-delay: 0.25s; }
+html.motion body.is-ready .cine-copy > *:nth-child(4) { animation-delay: 0.35s; }
+html.motion body.is-ready .cine-copy > *:nth-child(5) { animation-delay: 0.45s; }
+
+.cine-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 175, 55, 0.38);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  color: #f6e7b0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cine-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d4af37;
+  box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+  animation: cinePulse 1.6s ease-out infinite;
+}
+
+section.hero.cine h1 {
+  margin: 0;
+  color: #fff;
+  font-family: "Cairo", sans-serif;
+  font-size: clamp(44px, 7vw, 88px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: 0;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.45));
+}
+
+.cine-gold {
+  background: linear-gradient(180deg, #f6e7b0 0%, #d4af37 52%, #a8812a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cine-sub {
+  margin: 12px 0 0;
+  max-width: 38em;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.cine-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.cine-wa {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #d4af37;
+  color: #fff;
+  backdrop-filter: blur(12px);
+}
+
+.cine-wa:hover {
+  background: rgba(212, 175, 55, 0.16);
+}
+
+.cine-prices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  width: min(100%, 520px);
+  margin-top: 18px;
+}
+
+.cine-card {
+  margin: 0;
+  padding: 12px 10px;
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(14px);
+  text-align: center;
+}
+
+.cine-card span {
+  display: block;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cine-card b {
+  display: block;
+  margin-top: 4px;
+  color: #f6e7b0;
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+}
+
+.cine-scroll {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 18px;
+  width: 22px;
+  height: 46px;
+  transform: translateX(-50%);
+}
+
+.cine-scroll span {
+  display: block;
+  width: 1px;
+  height: 100%;
+  margin: 0 auto;
+  background: linear-gradient(#d4af37, transparent);
+  animation: cineDrop 1.6s ease-in-out infinite;
+}
+
+@keyframes cineRise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes cinePulse {
+  0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.65); }
+  100% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+}
+
+@keyframes cineDrop {
+  0% { transform: translateY(-70%); opacity: 0; }
+  35% { opacity: 1; }
+  100% { transform: translateY(70%); opacity: 0; }
+}
+
+@media (max-width: 979px) {
+  .cine-scroll {
+    bottom: calc(var(--dock-h) + 8px);
+  }
+}
+
+@media (max-width: 719px) {
+  section.hero.cine {
+    justify-content: center;
+    padding-inline: 18px;
+  }
+
+  .cine-copy {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  section.hero.cine h1 {
+    max-width: none;
+    margin-inline: auto;
+  }
+
+  .cine-sub {
+    font-size: 16px;
+  }
+
+  .cine-actions {
+    flex-direction: column;
+  }
+
+  .cine-actions .btn {
+    width: 100%;
+  }
+
+  .cine-prices {
+    width: 100%;
+  }
+
+  body.home .nav-app {
+    height: 32px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
 }

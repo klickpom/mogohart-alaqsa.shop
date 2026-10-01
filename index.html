@@ -44,8 +44,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="preload" as="image" href="./images/hero-bg.jpeg" fetchpriority="high" />
-    <link rel="stylesheet" href="./css/site.css?v=40" />
+    <link rel="stylesheet" href="./css/site.css?v=42" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -348,7 +347,7 @@
       }
     </script>
   </head>
-  <body class="intro-lock">
+  <body class="intro-lock home">
     <a class="skip" href="#collection">تخطي إلى المجموعة</a>
     <noscript>
       <p class="citation">مجوهرات الأقصى بالإخصاص: كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة. واتساب 01115495323. <a href="/location/">تفاصيل المكان</a> · <a href="/faq/">الأسئلة</a></p>
@@ -375,24 +374,19 @@
 
     <header class="nav" id="nav">
       <a class="brand" href="#top">
-        <img src="./images/logo.png" alt="شعار مجوهرات الأقصى" />
-        <span class="brand-copy"><b>مجوهرات الأقصى</b><small>بالإخصاص</small></span>
+        <img src="./images/logo.png" alt="شعار مجوهرات الأقصى" width="44" height="44" />
+        <span class="brand-copy"><b>مجوهرات الأقصى</b></span>
       </a>
       <nav class="nav-links" aria-label="التنقل الرئيسي">
-        <button data-go="about">من نحن</button>
-        <button data-go="collection">المجموعة</button>
-        <a href="#prices">السعر</a>
-        <button data-go="location">المكان</button>
-        <button data-go="branches">الفروع</button>
-        <button data-go="contact">تواصل</button>
+        <a href="#top">الرئيسية</a>
+        <a href="#prices">سعر الذهب</a>
+        <a href="#collection">المعرض</a>
+        <a href="/gold/">السبائك</a>
+        <a href="#branches">الفروع</a>
+        <a href="#contact">تواصل معنا</a>
       </nav>
       <div class="nav-end">
-        <a class="nav-quote" href="#prices">
-          <span class="live-dot" aria-hidden="true"></span>
-          <span class="q-label">عيار ٢١</span>
-          <b id="tickSell">—</b>
-        </a>
-        <a class="nav-pill" href="#prices">السعر الآن</a>
+        <a class="nav-app" href="https://apkpure.com/p/eg.alaqsa.jewelry" target="_blank" rel="noopener noreferrer">حمّل التطبيق</a>
         <button class="nav-toggle" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false">
           <span></span>
         </button>
@@ -400,42 +394,41 @@
     </header>
 
     <div class="drawer" id="drawer">
-      <button data-go="about">من نحن</button>
-      <button data-go="collection">المجموعة</button>
-      <a href="/prices/">السعر</a>
-      <button data-go="location">المكان</button>
-      <button data-go="branches">فروعنا</button>
-      <button data-go="faq">أسئلة</button>
-      <button data-go="contact">تواصل معنا</button>
+      <a href="#top">الرئيسية</a>
+      <a href="#prices">سعر الذهب</a>
+      <a href="#collection">المعرض</a>
+      <a href="/gold/">السبائك</a>
+      <a href="#branches">الفروع</a>
+      <a href="#contact">تواصل معنا</a>
+      <a href="https://apkpure.com/p/eg.alaqsa.jewelry" target="_blank" rel="noopener noreferrer">حمّل التطبيق</a>
       <a href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">واتساب</a>
       <a href="https://www.facebook.com/mokhtarewis73m/" target="_blank" rel="noopener noreferrer">فيسبوك</a>
     </div>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero cine" aria-label="مجوهرات الأقصى">
         <div class="hero-media" id="heroMedia">
-          <img src="./images/hero-bg.jpeg" alt="ذهب فيليغري من مجوهرات الأقصى بالإخصاص" fetchpriority="high" />
-          <div class="hero-shade"></div>
-          <div class="hero-spot" id="heroSpot" aria-hidden="true"></div>
-          <div class="sparks" aria-hidden="true">
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <video class="cine-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+            <source src="assets/hero.mp4" type="video/mp4" />
+          </video>
+          <div class="cine-shade" aria-hidden="true"></div>
+          <canvas class="cine-dust" id="cineDust" aria-hidden="true"></canvas>
+        </div>
+        <div class="cine-copy">
+          <p class="cine-pill"><span class="cine-dot" aria-hidden="true"></span>أسعار الذهب لحظة بلحظة</p>
+          <h1><span class="cine-gold">الذهب</span> الأصلي.. بثقة من سنين</h1>
+          <p class="cine-sub">مجوهرات الأقصى بالإخصاص — أحدث موديلات عيار 21 و18، سبائك وجنيهات، وسعر الدهب الحي في مكان واحد.</p>
+          <div class="cine-actions">
+            <a class="btn btn-gold" href="#collection">تصفح المعرض</a>
+            <a class="btn cine-wa" href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">تواصل واتساب</a>
+          </div>
+          <div class="cine-prices" aria-label="سعر بيع الجرام">
+            <p class="cine-card"><span>عيار 24</span><b id="heroSell24">—</b></p>
+            <p class="cine-card"><span>عيار 21</span><b id="heroSell21">—</b></p>
+            <p class="cine-card"><span>عيار 18</span><b id="heroSell18">—</b></p>
           </div>
         </div>
-        <div class="hero-shine" aria-hidden="true"></div>
-        <div class="hero-frame"></div>
-        <div class="hero-copy">
-          <img class="hero-logo" src="./images/logo.png" alt="مجوهرات الأقصى" />
-          <p class="eyebrow">ذهب عيار ٢١ قيراط</p>
-          <h1 class="gold-text">
-            <span class="hero-name">مجوهرات الأقصى</span>
-            <span class="hero-place">بالإخصاص</span>
-          </h1>
-          <p class="lede">رقي وأناقة في كل قطعة ذهبية. صناعة حرفية تُورث من جيل إلى جيل.</p>
-          <div class="hero-actions">
-            <a class="btn btn-gold" href="#collection">تصفح المجموعة</a>
-            <a class="btn btn-ghost" href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">تواصل واتساب</a>
-          </div>
-        </div>
+        <a class="cine-scroll" href="#collection" aria-label="التمرير إلى المعرض"><span aria-hidden="true"></span></a>
       </section>
 
       <section class="section app-poster" id="app">
@@ -1142,6 +1135,6 @@
       <a class="dock-call" href="tel:01115495323">اتصال</a>
     </div>
 
-    <script src="./js/site.js?v=30"></script>
+    <script src="./js/site.js?v=31"></script>
   </body>
 </html>

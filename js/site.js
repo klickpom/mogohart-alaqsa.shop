@@ -189,6 +189,12 @@ const paintCalc = () => {
 gramInput?.addEventListener("input", paintCalc);
 karatInput?.addEventListener("change", paintCalc);
 
+const paintHeroQuotes = (values) => {
+  paintNumber(document.getElementById("heroSell24"), values[24].sell);
+  paintNumber(document.getElementById("heroSell21"), values[21].sell);
+  paintNumber(document.getElementById("heroSell18"), values[18].sell);
+};
+
 const paintNumber = (el, next) => {
   if (!el) return;
   const from = Number(el.dataset.value || next);
@@ -235,6 +241,7 @@ const refreshPrices = async () => {
     latest = values;
     paintCalc();
     paintNumber(document.getElementById("tickSell"), values[21].sell);
+    paintHeroQuotes(values);
     Object.entries(values).forEach(([karat, quote]) => {
       const row = rows[karat];
       if (!row) return;
@@ -281,6 +288,7 @@ const refreshPrices = async () => {
       latest = values;
       paintCalc();
       paintNumber(document.getElementById("tickSell"), values[21].sell);
+      paintHeroQuotes(values);
       Object.entries(values).forEach(([karat, quote]) => {
         const row = rows[karat];
         if (!row) return;
@@ -299,3 +307,81 @@ window.setInterval(() => {
   if (syncLeft <= 0) refreshPrices();
   else paintSync();
 }, 1000);
+
+(() => {
+  const video = document.querySelector(".cine-video");
+  const canvas = document.getElementById("cineDust");
+  if (!video && !canvas) return;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const mobile = window.matchMedia("(max-width: 719px)");
+  let raf = 0;
+  let particles = [];
+  let ctx;
+
+  const fit = () => {
+    if (!canvas || !canvas.parentElement) return;
+    const rect = canvas.parentElement.getBoundingClientRect();
+    canvas.width = Math.max(1, Math.floor(rect.width));
+    canvas.height = Math.max(1, Math.floor(rect.height));
+  };
+
+  const seed = () => {
+    const count = mobile.matches ? 25 : 60;
+    particles = Array.from({ length: count }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.6 + 0.4,
+      s: Math.random() * 0.35 + 0.08,
+      a: Math.random() * 0.5 + 0.15,
+    }));
+  };
+
+  const draw = () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach((p) => {
+      p.y -= p.s;
+      if (p.y < -4) {
+        p.y = canvas.height + 4;
+        p.x = Math.random() * canvas.width;
+      }
+      ctx.beginPath();
+      ctx.fillStyle = `rgba(246, 231, 176, ${p.a})`;
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    raf = window.requestAnimationFrame(draw);
+  };
+
+  const stop = () => {
+    window.cancelAnimationFrame(raf);
+    raf = 0;
+    video?.pause();
+    if (canvas) canvas.hidden = true;
+  };
+
+  const start = () => {
+    if (reduce.matches) {
+      stop();
+      return;
+    }
+    if (canvas) {
+      canvas.hidden = false;
+      ctx = canvas.getContext("2d");
+      fit();
+      seed();
+      if (!raf) draw();
+    }
+    video?.play()?.catch(() => {});
+  };
+
+  window.addEventListener("resize", () => {
+    if (reduce.matches || !canvas) return;
+    fit();
+    seed();
+  });
+  reduce.addEventListener("change", () => (reduce.matches ? stop() : start()));
+  mobile.addEventListener("change", () => {
+    if (!reduce.matches) seed();
+  });
+  start();
+})();
