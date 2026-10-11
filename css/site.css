@@ -2796,3 +2796,113 @@ a.poster-stage {
   color: rgba(255, 255, 255, 0.72);
   font-size: 14px;
 }
+
+.nav-apk {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 16px;
+  border-radius: 999px;
+  color: #14110a;
+  background: linear-gradient(180deg, #f8e7b0, #d4af37 58%, #a8812a);
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+  box-shadow: 0 8px 22px rgba(212, 175, 55, 0.32);
+}
+
+.nav-apk:hover {
+  filter: brightness(1.06);
+}
+
+.apk-btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: min(100%, 280px);
+  min-height: 68px;
+  padding: 8px 18px 8px 22px;
+  border-radius: 999px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #14110a;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5), transparent 46%),
+    linear-gradient(180deg, #f8e7b0 0%, #e2c56e 40%, #c49a3c 74%, #8d6a22 100%);
+  box-shadow:
+    0 0 0 1px rgba(255, 236, 180, 0.7),
+    0 16px 36px rgba(212, 175, 55, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.apk-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 28%, rgba(255, 255, 255, 0.55) 48%, transparent 68%);
+  transform: translateX(130%);
+}
+
+html.motion .apk-btn::after {
+  animation: posterSheen 4.2s ease-in-out infinite;
+}
+
+.poster-caption .apk-btn,
+.poster-caption .apk-copy,
+.poster-caption .apk-copy b,
+.poster-caption .apk-copy small {
+  color: #14110a;
+}
+
+.apk-ico {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: 0 0 42px;
+  background: #14110a;
+  color: #f6e7b0;
+  box-shadow: inset 0 0 0 1px rgba(246, 231, 176, 0.35);
+}
+
+.poster-caption .apk-ico {
+  color: #f6e7b0;
+  font-size: 0;
+}
+
+.apk-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.05;
+}
+
+.apk-copy b {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.apk-copy small {
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.72;
+}
+
+@media (max-width: 719px) {
+  .nav-apk {
+    height: 34px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .apk-btn {
+    width: 100%;
+  }
+}

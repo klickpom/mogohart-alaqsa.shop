@@ -1,7 +1,5 @@
 RewriteEngine On
 
-RewriteRule ^app/?$ https://mogohart-alaqsa.shop/ [R=301,L]
-
 RewriteCond %{HTTP_HOST} ^www\.mogohart-alaqsa\.shop$ [NC]
 RewriteRule ^ https://mogohart-alaqsa.shop%{REQUEST_URI} [R=301,L]
 
@@ -14,5 +12,9 @@ RewriteRule ^ https://mogohart-alaqsa.shop%{REQUEST_URI} [R=301,L]
   Header set Referrer-Policy "strict-origin-when-cross-origin"
   <FilesMatch "\.(css|js|jpg|jpeg|png|webp)$">
     Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.apk$">
+    Header set Content-Type "application/vnd.android.package-archive"
+    Header set Content-Disposition "attachment; filename=Alaqsa-Jewelry-3.2.apk"
   </FilesMatch>
 </IfModule>
