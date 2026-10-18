@@ -2959,6 +2959,33 @@ html.motion .apk-ico svg {
 }
 
 @media (max-width: 719px) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  html.motion .poster-float,
+  html.motion .poster-frame,
+  html.motion .poster-frame img,
+  html.motion .poster-sheen,
+  html.motion .cine-dot {
+    animation: none;
+  }
+
+  .cine-dust {
+    display: none;
+  }
+
+  .product,
+  .split,
+  .showcase-band,
+  .local-panel,
+  .faq-list,
+  .branch,
+  .contact-grid {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 480px;
+  }
+
   .apk-btn {
     width: 100%;
   }

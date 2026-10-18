@@ -38,7 +38,7 @@ let ticking = false;
 const onScroll = () => {
   latestY = window.scrollY;
   nav?.classList.toggle("is-scrolled", latestY > 24);
-  if (ticking) return;
+  if (window.innerWidth < 720 || ticking) return;
   ticking = true;
   window.requestAnimationFrame(() => {
     if (heroMedia) {
@@ -359,9 +359,16 @@ window.setInterval(() => {
   };
 
   const start = () => {
-    if (reduce.matches) {
+    if (reduce.matches || mobile.matches) {
       stop();
       return;
+    }
+    if (video && !video.querySelector("source")) {
+      const source = document.createElement("source");
+      source.src = "assets/hero.mp4";
+      source.type = "video/mp4";
+      video.appendChild(source);
+      video.load();
     }
     if (canvas) {
       canvas.hidden = false;
@@ -379,8 +386,6 @@ window.setInterval(() => {
     seed();
   });
   reduce.addEventListener("change", () => (reduce.matches ? stop() : start()));
-  mobile.addEventListener("change", () => {
-    if (!reduce.matches) seed();
-  });
+  mobile.addEventListener("change", () => (mobile.matches ? stop() : start()));
   start();
 })();

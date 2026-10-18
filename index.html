@@ -39,12 +39,13 @@
     <meta name="twitter:description" content="محل ذهب عيار ٢١ في كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة." />
     <meta name="twitter:image" content="https://mogohart-alaqsa.shop/images/og.jpg" />
     <link rel="image_src" href="https://mogohart-alaqsa.shop/images/og.jpg" />
-    <link rel="icon" type="image/png" href="./images/logo.png" />
-    <link rel="apple-touch-icon" href="./images/logo.png" />
+    <link rel="icon" type="image/png" href="./images/logo-mark.png" />
+    <link rel="apple-touch-icon" href="./images/logo-mark.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/site.css?v=46" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;600;700;800&display=swap" /></noscript>
+    <link rel="stylesheet" href="./css/site.css?v=47" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -84,7 +85,7 @@
             "url": "https://mogohart-alaqsa.shop/",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://mogohart-alaqsa.shop/images/logo.png"
+              "url": "https://mogohart-alaqsa.shop/images/logo-mark.png"
             },
             "email": "alimohmed01123a@gmail.com",
             "privacyPolicy": "https://mogohart-alaqsa.shop/privacy.html",
@@ -103,7 +104,7 @@
             "url": "https://mogohart-alaqsa.shop/location/",
             "image": [
               "https://mogohart-alaqsa.shop/images/og.jpg",
-              "https://mogohart-alaqsa.shop/images/logo.png"
+              "https://mogohart-alaqsa.shop/images/logo-mark.png"
             ],
             "telephone": ["+201026135848", "+201115495323", "+20228678410"],
             "email": "alimohmed01123a@gmail.com",
@@ -355,7 +356,7 @@
           <span class="intro-halo"></span>
           <span class="intro-ring"></span>
           <span class="intro-orbit"></span>
-          <img src="./images/logo.png" alt="" />
+          <img src="./images/logo-mark.png" alt="" />
         </div>
         <p class="intro-name">مجوهرات الأقصى</p>
         <p class="intro-place">بالإخصاص</p>
@@ -366,7 +367,7 @@
 
     <header class="nav" id="nav">
       <a class="brand" href="#top">
-        <img src="./images/logo.png" alt="شعار مجوهرات الأقصى" width="44" height="44" />
+        <img src="./images/logo-mark.png" alt="شعار مجوهرات الأقصى" width="44" height="44" />
         <span class="brand-copy"><b>مجوهرات الأقصى</b></span>
       </a>
       <nav class="nav-links" aria-label="التنقل الرئيسي">
@@ -400,9 +401,7 @@
     <main id="top">
       <section class="hero cine" aria-label="مجوهرات الأقصى">
         <div class="hero-media" id="heroMedia">
-          <video class="cine-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
-            <source src="assets/hero.mp4" type="video/mp4" />
-          </video>
+          <video class="cine-video" muted loop playsinline preload="none" poster="./images/hero-still.jpg" aria-hidden="true"></video>
           <div class="cine-shade" aria-hidden="true"></div>
           <canvas class="cine-dust" id="cineDust" aria-hidden="true"></canvas>
         </div>
@@ -426,7 +425,7 @@
         <div class="poster-float">
           <figure class="poster-frame">
             <div class="poster-stage">
-              <img src="./images/app-now.jpg" width="571" height="1024" alt="تطبيق مجوهرات الأقصى متاح الآن" />
+              <img loading="lazy" decoding="async" src="./images/app-now.jpg" width="571" height="1024" alt="تطبيق مجوهرات الأقصى متاح الآن" />
               <span class="poster-sheen" aria-hidden="true"></span>
             </div>
             <figcaption class="poster-caption">
@@ -853,7 +852,7 @@
       <section class="section">
         <div class="split">
           <div class="lifestyle-shot">
-            <img src="./images/showcase-ring.jpg" alt="أناقة المجوهرات الذهبية" />
+            <img loading="lazy" decoding="async" src="./images/showcase-ring.jpg" alt="أناقة المجوهرات الذهبية" />
           </div>
           <div class="block">
             <h2 class="gold-text">لمسة من الأناقة</h2>
@@ -876,7 +875,7 @@
               <div class="stat"><b class="gold-text">ضمان</b><span>مدى الحياة</span></div>
             </div>
           </div>
-          <img src="./images/workshop.png" alt="ورشة صناعة الذهب" />
+          <img loading="lazy" decoding="async" src="./images/workshop.jpg" width="800" height="534" alt="ورشة صناعة الذهب" />
         </div>
       </section>
 
@@ -990,7 +989,7 @@
       </section>
 
       <div class="showcase-band">
-        <img src="./images/showcase-investment.jpg" alt="سبائك ذهب استثمارية من مجوهرات الأقصى" />
+        <img loading="lazy" decoding="async" src="./images/showcase-investment.jpg" alt="سبائك ذهب استثمارية من مجوهرات الأقصى" />
       </div>
 
       <section class="section" id="contact">
@@ -1090,7 +1089,7 @@
     <footer class="footer">
       <div class="footer-grid">
         <div>
-          <img src="./images/logo.png" alt="" />
+          <img src="./images/logo-mark.png" alt="" />
           <p class="seo-foot">مجوهرات الأقصى بالإخصاص محل لبيع وشراء الذهب عيار ٢١ في كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة.</p>
         </div>
         <div class="footer-col">
@@ -1129,6 +1128,6 @@
       <a class="dock-call" href="tel:01115495323">اتصال</a>
     </div>
 
-    <script src="./js/site.js?v=33"></script>
+    <script src="./js/site.js?v=34"></script>
   </body>
 </html>
