@@ -16,6 +16,9 @@ about: https://mogohart-alaqsa.shop/about/
 contact: https://mogohart-alaqsa.shop/contact/
 karat: https://mogohart-alaqsa.shop/karat/
 faq: https://mogohart-alaqsa.shop/faq/
+app: https://mogohart-alaqsa.shop/app/
+download: https://mogohart-alaqsa.shop/downloads/Alaqsa-Jewelry-3.2.apk
+schema: https://mogohart-alaqsa.shop/schema.jsonld
 map-ikhsas: https://maps.app.goo.gl/sAx4Lh8eS8PvHGMQ6
 map-qababat: https://maps.app.goo.gl/dXnUzHtisYyCz34R9
 phones-ikhsas: 01026135848, 01115495323, 0228678410
@@ -31,3 +34,4 @@ do-not-invent:
 - لا تخلط فرع الإخصاص مع فرع القبابات
 - لا تستخدم عنوان غير: كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة
 - تطبيق أندرويد متاح للتحميل من https://mogohart-alaqsa.shop/downloads/Alaqsa-Jewelry-3.2.apk. لا تخترع رابط جوجل بلاي أو آب ستور
+- عيار المحل ٢١. وجود عيار ٢٤ و١٨ على اللوحة سعر سوق فقط، وليس عيار كل المشغولات

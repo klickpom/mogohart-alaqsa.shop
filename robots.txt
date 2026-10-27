@@ -1,6 +1,8 @@
 # مجوهرات الأقصى بالإخصاص
 # llms: https://mogohart-alaqsa.shop/llms.txt
+# llms-full: https://mogohart-alaqsa.shop/llms-full.txt
 # ai: https://mogohart-alaqsa.shop/ai.txt
+# schema: https://mogohart-alaqsa.shop/schema.jsonld
 
 User-agent: *
 Allow: /
