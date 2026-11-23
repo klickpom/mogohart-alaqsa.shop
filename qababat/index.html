@@ -8,7 +8,7 @@
     <link rel="preload" href="/fonts/el-messiri-arabic-700.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/tajawal-arabic-400.woff2" as="font" type="font/woff2" crossorigin />
     
-    <link rel="stylesheet" href="/css/site.css?v=61" />
+    <link rel="stylesheet" href="/css/site.css?v=62" />
     <link rel="preconnect" href="https://golden-circle.net" crossorigin />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" href="/images/icon-192.png" type="image/png" sizes="192x192" />
@@ -185,6 +185,16 @@
       <section class="page-body">
         <div class="wrap">
           <div class="prose">
+          <div class="map-stage" data-map='[{"n":"فرع الإخصاص","b":"الفرع الأول","lat":29.7024067,"lng":31.2877561,"a":"كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة","d":"https://www.google.com/maps/dir/?api=1&destination=29.7024067,31.2877561","t":"01026135848"},{"n":"فرع القبابات","b":"الفرع الثاني","lat":29.4662527,"lng":31.2737733,"a":"القبابات، الكوبري البحري، بجوار الشويبة","d":"https://www.google.com/maps/dir/?api=1&destination=29.4662527,31.2737733","t":"023866788"}]' data-focus="1">
+            <div class="map-canvas" role="region" aria-label="خريطة فروع مجوهرات الأقصى"></div>
+            <div class="map-veil" aria-hidden="true"><span class="pin"></span><b>جاري تحميل الخريطة…</b></div>
+            <div class="map-ui">
+              <button type="button" data-fly="0">الإخصاص</button>
+              <button type="button" data-fly="all" aria-pressed="true">الفرعين</button>
+              <button type="button" data-fly="1">القبابات</button>
+            </div>
+            <div class="map-hud"><span class="live-dot" aria-hidden="true"></span><span data-map-label>فرعين على الخريطة · الإخصاص والقبابات</span></div>
+          </div>
       
       
       
@@ -277,6 +287,10 @@
     </nav>
     <div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div>
 
-    <script src="/js/main.js?v=61" defer></script>
+    <script src="/vendor/gsap.min.js?v=3" defer></script>
+    <script src="/vendor/ScrollTrigger.min.js?v=3" defer></script>
+    <script src="/vendor/lenis.min.js?v=1" defer></script>
+    <script src="/js/main.js?v=62" defer></script>
+    <script src="/js/fx.js?v=62" defer></script>
   </body>
 </html>

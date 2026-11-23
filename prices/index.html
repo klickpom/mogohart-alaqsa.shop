@@ -8,7 +8,7 @@
     <link rel="preload" href="/fonts/el-messiri-arabic-700.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/tajawal-arabic-400.woff2" as="font" type="font/woff2" crossorigin />
     
-    <link rel="stylesheet" href="/css/site.css?v=61" />
+    <link rel="stylesheet" href="/css/site.css?v=62" />
     <link rel="preconnect" href="https://golden-circle.net" crossorigin />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" href="/images/icon-192.png" type="image/png" sizes="192x192" />
@@ -196,10 +196,12 @@
           </div>
           <form class="calc-card rv" style="--d:.1s" onsubmit="return false" aria-label="حاسبة سعر الذهب">
             <h3>احسب قيمة دهبك</h3>
-            <label class="field">الوزن بالجرام<input id="gramInput" type="number" min="0.1" step="0.1" value="5" inputmode="decimal" /></label>
+            <div class="calc-row">
+              <label class="field">الوزن بالجرام<input id="gramInput" type="number" min="0.1" step="0.1" value="5" inputmode="decimal" /></label>
+              <label class="field">مصنعية الجرام<input id="makeInput" type="number" min="0" step="1" placeholder="اختياري" inputmode="decimal" /></label>
+            </div>
             <div class="field"><span>العيار</span><div class="seg"><button type="button" data-k="24" aria-pressed="false">٢٤</button><button type="button" data-k="21" aria-pressed="true">٢١</button><button type="button" data-k="18" aria-pressed="false">١٨</button></div></div>
-            <div class="calc-out"><small>قيمة الذهب بسعر البيع الآن</small><b id="calcOut" aria-live="polite">—</b></div>
-            <label class="field">مصنعية الجرام (اختياري)<input id="makeInput" type="number" min="0" step="1" placeholder="اكتب المصنعية لو تعرفها" inputmode="decimal" /></label>
+            <div class="calc-out big"><small>قيمة الذهب بسعر البيع الآن</small><b id="calcOut" aria-live="polite">—</b></div>
             <div class="calc-out"><small>الإجمالي بالمصنعية</small><b id="calcMake">—</b></div>
             <p class="note">الحاسبة تقديرية. الوزن والعيار والمصنعية يتأكدوا في المحل.</p>
           </form>
@@ -295,6 +297,10 @@
     </nav>
     <div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div>
 
-    <script src="/js/main.js?v=61" defer></script>
+    <script src="/vendor/gsap.min.js?v=3" defer></script>
+    <script src="/vendor/ScrollTrigger.min.js?v=3" defer></script>
+    <script src="/vendor/lenis.min.js?v=1" defer></script>
+    <script src="/js/main.js?v=62" defer></script>
+    <script src="/js/fx.js?v=62" defer></script>
   </body>
 </html>
