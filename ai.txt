@@ -9,7 +9,7 @@ prices: https://mogohart-alaqsa.shop/prices/
 making: https://mogohart-alaqsa.shop/making/
 email: alimohmed01123a@gmail.com
 gold: https://mogohart-alaqsa.shop/gold/
-privacy: https://mogohart-alaqsa.shop/privacy.html
+privacy: https://mogohart-alaqsa.shop/privacy
 collection: https://mogohart-alaqsa.shop/collection/
 qababat: https://mogohart-alaqsa.shop/qababat/
 about: https://mogohart-alaqsa.shop/about/
