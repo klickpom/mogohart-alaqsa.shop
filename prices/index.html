@@ -1,9 +1,20 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar-EG" dir="rtl">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#070f0c" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#04110c" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="preload" href="/fonts/el-messiri-arabic-700.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/tajawal-arabic-400.woff2" as="font" type="font/woff2" crossorigin />
+    
+    <link rel="stylesheet" href="/css/site.css?v=60" />
+    <link rel="preconnect" href="https://golden-circle.net" crossorigin />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/images/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <title>سعر الذهب اليوم | سعر الدهب دلوقتي | مجوهرات الأقصى</title>
     <meta name="description" content="سعر الذهب اليوم وسعر الدهب دلوقتي في مصر: بيع وشراء الجرام على لوحة مجوهرات الأقصى بالإخصاص، ويتحدث تلقائياً كل ١٥ ثانية. المصنعية غير داخلة." />
     <link rel="canonical" href="https://mogohart-alaqsa.shop/prices/" />
@@ -14,8 +25,6 @@
     <meta property="og:image" content="https://mogohart-alaqsa.shop/images/og.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ar_EG" />
-    <link rel="icon" href="/images/logo-mark.png" />
-    <link rel="stylesheet" href="/css/site.css?v=38" />
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,7 +36,7 @@
       "name": "سعر الذهب اليوم | سعر الدهب دلوقتي | مجوهرات الأقصى",
       "description": "سعر الذهب اليوم وسعر الدهب دلوقتي في مصر على لوحة مجوهرات الأقصى بالإخصاص، ويتحدث تلقائياً كل ١٥ ثانية. المصنعية غير داخلة في سعر الجرام.",
       "inLanguage": "ar-EG",
-      "dateModified": "2026-09-29",
+      "dateModified": "2026-11-23",
       "about": {
         "@id": "https://mogohart-alaqsa.shop/#ikhsas"
       },
@@ -115,104 +124,86 @@
   ]
 }
     </script>
+  
   </head>
-  <body class="is-ready">
-    <header class="nav is-scrolled" id="nav">
-      <a class="brand" href="/">
-        <img src="/images/logo-mark.png" alt="شعار مجوهرات الأقصى" />
-        <span class="brand-copy"><b>مجوهرات الأقصى</b><small>بالإخصاص</small></span>
+  <body>
+
+    <a class="skip" href="#main">تخطي إلى المحتوى</a>
+    <div class="progress" aria-hidden="true"></div>
+    <header class="nav" id="nav">
+      <a class="brand" href="/" aria-label="مجوهرات الأقصى — الرئيسية">
+        <img src="/images/logo-96.webp" width="46" height="46" alt="" />
+        <span><b>مجوهرات الأقصى</b><small>الإخصاص · الصف · الجيزة</small></span>
       </a>
-      <nav class="nav-links" aria-label="التنقل">
+      <nav class="nav-links" aria-label="التنقل الرئيسي">
         <a href="/">الرئيسية</a>
+        <a href="/prices/" aria-current="page">سعر الدهب</a>
         <a href="/collection/">المجموعة</a>
-        <a href="/prices/" aria-current="page">السعر</a>
-        <a href="/location/">المكان</a>
-        <a href="/faq/">أسئلة</a>
-        <a href="/#branches">الفروع</a>
+        <a href="/guides/">أدلة</a>
+        <a href="/location/">الفروع</a>
+        <a href="/contact/">تواصل</a>
       </nav>
       <div class="nav-end">
-        <a class="nav-quote" href="/prices/">
-          <span class="live-dot" aria-hidden="true"></span>
-          <span class="q-label">عيار ٢١</span>
-          <b id="tickSell">—</b>
-        </a>
-        <a class="nav-pill" href="/prices/">السعر الآن</a>
-        <button class="nav-toggle" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false"><span></span></button>
+        <a class="nav-quote" href="/prices/" aria-label="سعر جرام عيار ٢١ الآن"><span class="live-dot" aria-hidden="true"></span><span class="q-label">عيار ٢١</span><b data-q="21-sell">—</b></a>
+        <a class="btn btn-gold magnetic" href="https://wa.me/201115495323?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B3%D8%A3%D9%84%20%D8%B9%D9%86" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>واتساب</a>
+        <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false" aria-controls="drawer"><span></span></button>
       </div>
     </header>
-    <div class="drawer" id="drawer">
-      <a href="/">الرئيسية</a>
-      <a href="/collection/">المجموعة</a>
-      <a href="/prices/">السعر</a>
-      <a href="/location/">المكان</a>
-      <a href="/faq/">أسئلة</a>
-      <a href="/#branches">الفروع</a>
-    </div>
-    <main class="page-seo">
-      <nav class="crumbs" aria-label="مسار الصفحة">
+    <nav class="drawer" id="drawer" aria-label="القائمة">
+      <a href="/">الرئيسية<small>←</small></a>
+      <a href="/prices/">سعر الدهب<small>←</small></a>
+      <a href="/collection/">المجموعة<small>←</small></a>
+      <a href="/guides/">أدلة<small>←</small></a>
+      <a href="/location/">الفروع<small>←</small></a>
+      <a href="/contact/">تواصل<small>←</small></a>
+      <a href="/gold/">بيع وشراء الذهب<small>←</small></a>
+      <a href="/faq/">أسئلة شائعة<small>←</small></a>
+    </nav>
+
+    <main id="main">
+      <section class="page-hero"><div class="hero-pattern" aria-hidden="true"></div><div class="wrap"><nav class="crumbs" aria-label="مسار الصفحة">
         <a href="/">الرئيسية</a>
         <span aria-hidden="true">/</span>
         <span>سعر الذهب اليوم</span>
-      </nav>
-      <p class="eyebrow">الإخصاص · الصف · الجيزة</p>
-      <h1 class="gold-text">سعر الذهب اليوم</h1>
-      <p class="citation" id="guide-price">سعر الذهب اليوم، وسعر الدهب دلوقتي، هو سعر بيع وشراء الجرام في مصر على اللوحة، ويتحدث تلقائياً كل ١٥ ثانية. عيار المحل ٢١. <a href="/making/">المصنعية</a> غير داخلة في سعر الجرام.</p>
-      <section class="price-board" id="prices">
-        <p class="live-pill"><span class="live-dot" aria-hidden="true"></span> بيتحدث لوحده</p>
-        <div class="price-card">
-          <div class="price-meta">
-            <span>الأونصة <b id="ozPrice">—</b></span>
-            <span>الدولار <b id="usdRate">—</b></span>
-            <span id="priceUpdated">جاري التحديث</span>
-          </div>
-          <div class="price-table" id="priceTable">
-            <div class="price-row head">
-              <span>العيار</span>
-              <span>شراء</span>
-              <span>بيع</span>
-              <span>الحركة</span>
+      </nav><p class="eyebrow">الإخصاص · الصف · الجيزة</p><h1 class="gold-text">سعر الذهب اليوم</h1><p class="citation" id="guide-price">سعر الذهب اليوم، وسعر الدهب دلوقتي، هو سعر بيع وشراء الجرام في مصر على اللوحة، ويتحدث تلقائياً كل ١٥ ثانية. عيار المحل ٢١. <a href="/making/">المصنعية</a> غير داخلة في سعر الجرام.</p></div></section>
+      <section class="page-body">
+        <div class="wrap">
+          <div class="">
+      
+      
+      
+      
+      
+        <div class="board">
+          <div class="board-card rv">
+            <div class="board-meta">
+              <p class="live-pill"><span class="live-dot" aria-hidden="true"></span> مباشر</p>
+              <span>الأونصة <b data-oz>—</b></span>
+              <span>الدولار <b data-usd>—</b></span>
+              <span data-updated>جاري التحديث…</span>
             </div>
-            <div class="price-row" data-karat="24">
-              <span>عيار ٢٤</span>
-              <b class="price-num" data-side="buy">—</b>
-              <b class="price-num" data-side="sell">—</b>
-              <span class="price-delta">—</span>
+            <div class="price-table" role="table" aria-label="سعر جرام الذهب في مصر الآن بالجنيه">
+              <div class="price-row head" role="row"><span role="columnheader">العيار</span><span role="columnheader">شراء</span><span role="columnheader">بيع</span><span role="columnheader">الحركة</span></div>
+              <div class="price-row" data-karat="24" role="row"><span role="cell">عيار ٢٤</span><b class="price-num" data-side="buy" role="cell">—</b><b class="price-num" data-side="sell" role="cell">—</b><span class="price-delta" role="cell">—</span></div>
+              <div class="price-row is-main" data-karat="21" role="row"><span role="cell">عيار ٢١ <small>عيار المحل</small></span><b class="price-num" data-side="buy" role="cell">—</b><b class="price-num" data-side="sell" role="cell">—</b><span class="price-delta" role="cell">—</span></div>
+              <div class="price-row" data-karat="18" role="row"><span role="cell">عيار ١٨</span><b class="price-num" data-side="buy" role="cell">—</b><b class="price-num" data-side="sell" role="cell">—</b><span class="price-delta" role="cell">—</span></div>
             </div>
-            <div class="price-row is-main" data-karat="21">
-              <span>عيار ٢١ <small>عيار المحل</small></span>
-              <b class="price-num" data-side="buy">—</b>
-              <b class="price-num" data-side="sell">—</b>
-              <span class="price-delta">—</span>
-            </div>
-            <div class="price-row" data-karat="18">
-              <span>عيار ١٨</span>
-              <b class="price-num" data-side="buy">—</b>
-              <b class="price-num" data-side="sell">—</b>
-              <span class="price-delta">—</span>
+            <div class="pound" style="margin-top:10px"><span>الجنيه الذهب <small style="color:var(--dim)">(٨ جرام عيار ٢١)</small></span><b data-pound>—</b></div>
+            <div class="board-foot">
+              <span>السعر بالجنيه المصري للجرام. <a href="/making/" style="color:var(--gold-hi)">المصنعية</a> غير داخلة في سعر الجرام.</span>
+              <span class="auto-sync"><span class="auto-ring" aria-hidden="true"></span>تحديث بعد <b data-sync-left>15</b> ث</span>
             </div>
           </div>
-          <form class="gold-calc" id="goldCalc">
-            <label>الوزن بالجرام
-              <input id="gramInput" type="number" min="0.1" step="0.1" value="1" inputmode="decimal" />
-            </label>
-            <label>العيار
-              <select id="karatInput">
-                <option value="24">٢٤</option>
-                <option value="21" selected>٢١</option>
-                <option value="18">١٨</option>
-              </select>
-            </label>
-            <p>قيمة البيع <b id="calcOut">—</b></p>
+          <form class="calc-card rv" style="--d:.1s" onsubmit="return false" aria-label="حاسبة سعر الذهب">
+            <h3>احسب قيمة دهبك</h3>
+            <label class="field">الوزن بالجرام<input id="gramInput" type="number" min="0.1" step="0.1" value="5" inputmode="decimal" /></label>
+            <div class="field"><span>العيار</span><div class="seg"><button type="button" data-k="24" aria-pressed="false">٢٤</button><button type="button" data-k="21" aria-pressed="true">٢١</button><button type="button" data-k="18" aria-pressed="false">١٨</button></div></div>
+            <div class="calc-out"><small>قيمة الذهب بسعر البيع الآن</small><b id="calcOut" aria-live="polite">—</b></div>
+            <label class="field">مصنعية الجرام (اختياري)<input id="makeInput" type="number" min="0" step="1" placeholder="اكتب المصنعية لو تعرفها" inputmode="decimal" /></label>
+            <div class="calc-out"><small>الإجمالي بالمصنعية</small><b id="calcMake">—</b></div>
+            <p class="note">الحاسبة تقديرية. الوزن والعيار والمصنعية يتأكدوا في المحل.</p>
           </form>
-          <p class="price-note">السعر يتحدث تلقائياً كل ١٥ ثانية. <a href="/making/">المصنعية</a> على القطعة غير داخلة في سعر الجرام.</p>
-          <div class="auto-sync" id="autoSync">
-            <span class="auto-ring" aria-hidden="true"></span>
-            <span>تحديث تلقائي</span>
-            <b id="syncLeft">15</b>
-            <span>ث</span>
-          </div>
         </div>
-      </section>
       <h2 class="gold-text">أسئلة عن السعر</h2>
       <p class="seo-copy">اللوحة تعرض سعر الجرام لعيار ٢٤ و٢١ و١٨. العيار المعروض في المحل هو ٢١. سعر البيع أعلى ويدفعه العميل، وسعر الشراء أقل ويدفعه المحل.</p>
       <div class="faq-list">
@@ -242,12 +233,68 @@
         </details>
       </div>
       <p class="seo-copy"><a href="/making/">المصنعية</a> · <a href="/gold/">بيع وشراء الذهب</a> · <a href="/location/">عنوان المحل عند كوبري غمازة الكبري</a> · <a href="/collection/">مجموعة الذهب</a></p>
-    </main>
-    <div class="dock">
-      <a class="dock-wa" href="https://wa.me/201115495323" target="_blank" rel="noopener noreferrer">واتساب</a>
-      <a class="dock-branch" href="/#branches">الفروع</a>
-      <a class="dock-call" href="tel:01115495323">اتصال</a>
     </div>
-    <script src="/js/site.js?v=33"></script>
+
+        <div class="cta-strip rv"><p>عايز تشتري أو تبيع؟ كلمنا على واتساب</p><div class="row-btns"><a class="btn btn-wa" href="https://wa.me/201115495323?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B3%D8%A3%D9%84%20%D8%B9%D9%86" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>واتساب 01115495323</a><a class="btn btn-ghost" href="/location/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>الفروع</a></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <div class="foot-grid">
+          <div class="foot-brand">
+            <img src="/images/logo-192.webp" width="84" height="84" alt="شعار مجوهرات الأقصى" loading="lazy" />
+            <p>مجوهرات الأقصى — محل بيع وشراء الذهب والمجوهرات عيار ٢١ في الإخصاص، الصف، الجيزة، وفرع ثانٍ في القبابات. صاحب المحل مختار عبد الحميد شلبية.</p>
+          </div>
+          <div>
+            <h4>الموقع</h4>
+            <ul>
+              <li><a href="/prices/">سعر الذهب اليوم</a></li>
+              <li><a href="/gold-pound/">سعر الجنيه الذهب</a></li>
+              <li><a href="/collection/">المجموعة</a></li>
+              <li><a href="/gold/">بيع وشراء الذهب</a></li>
+              <li><a href="/making/">المصنعية</a></li>
+              <li><a href="/app/">تطبيق المحل</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>أدلة</h4>
+            <ul>
+              <li><a href="/guides/karat-18-21-24/">الفرق بين عيار ١٨ و٢١ و٢٤</a></li>
+              <li><a href="/guides/real-gold/">إزاي تعرف الدهب الأصلي</a></li>
+              <li><a href="/guides/sell-used-gold/">بيع الدهب المستعمل</a></li>
+              <li><a href="/guides/shabka/">شبكة العروسة</a></li>
+              <li><a href="/faq/">أسئلة شائعة</a></li>
+              <li><a href="/about/">عن المحل</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>العنوان</h4>
+            <address>
+              <b>مجوهرات الأقصى بالإخصاص</b><br />كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة<br />
+              <a href="tel:01026135848">01026135848</a> · <a href="tel:01115495323">01115495323</a> · <a href="tel:0228678410">0228678410</a><br /><br />
+              <b>فرع القبابات</b><br />القبابات، الكوبري البحري، بجوار الشويبة<br />
+              <a href="tel:023866788">023866788</a>
+            </address>
+          </div>
+        </div>
+        <p class="foot-en" lang="en">Al-Aqsa Jewelry (Mogohart Al-Aqsa) — 21K gold jewelry shop in El-Ekhsas, El-Saff, Giza, Egypt, by Ghamaza El-Kubra bridge. Buy and sell gold, rings, earrings, sets, gold bars and gold pounds, with a live Egyptian gold price board. Second branch in El-Qababat. WhatsApp +20 111 549 5323.</p>
+        <div class="foot-base">
+          <span>© 2026 مجوهرات الأقصى</span>
+          <span><a href="/privacy.html">سياسة الخصوصية</a> · <a href="https://www.facebook.com/mokhtarewis73m/" target="_blank" rel="noopener">فيسبوك</a> · <a href="/contact/">تواصل</a></span>
+        </div>
+      </div>
+      <div class="foot-word" aria-hidden="true">الأقصى</div>
+    </footer>
+    <button class="to-top" type="button" aria-label="الرجوع لأعلى"><svg class="ring" viewBox="0 0 54 54" aria-hidden="true"><circle class="bg" cx="27" cy="27" r="24"/><circle cx="27" cy="27" r="24"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg></button>
+    <nav class="dock" aria-label="تواصل سريع">
+      <a href="tel:01115495323"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>اتصال</a>
+      <a class="main" href="https://wa.me/201115495323?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B3%D8%A3%D9%84%20%D8%B9%D9%86" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>واتساب</a>
+      <a href="/location/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>الفروع</a>
+    </nav>
+    <div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div>
+
+    <script src="/js/main.js?v=60" defer></script>
   </body>
 </html>

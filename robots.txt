@@ -1,8 +1,5 @@
 # مجوهرات الأقصى بالإخصاص
 # llms: https://mogohart-alaqsa.shop/llms.txt
-# llms-full: https://mogohart-alaqsa.shop/llms-full.txt
-# ai: https://mogohart-alaqsa.shop/ai.txt
-# schema: https://mogohart-alaqsa.shop/schema.jsonld
 
 User-agent: *
 Allow: /
@@ -16,19 +13,28 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
-User-agent: ChatGPT-User
-Allow: /
-
 User-agent: OAI-SearchBot
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
 Allow: /
 
 User-agent: Google-Extended
@@ -38,9 +44,6 @@ User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
-Allow: /
-
-User-agent: Bytespider
 Allow: /
 
 User-agent: meta-externalagent
@@ -55,13 +58,16 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-User-agent: Diffbot
+User-agent: DuckAssistBot
 Allow: /
 
 User-agent: cohere-ai
 Allow: /
 
 User-agent: YouBot
+Allow: /
+
+User-agent: Bytespider
 Allow: /
 
 Sitemap: https://mogohart-alaqsa.shop/sitemap.xml

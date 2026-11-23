@@ -1,50 +1,50 @@
-# مجوهرات الأقصى بالإخصاص
+# مجوهرات الأقصى بالإخصاص (Al-Aqsa Jewelry — El-Ekhsas, El-Saff, Giza)
 
-محل مجوهرات الأقصى بالإخصاص لبيع وشراء الذهب عيار ٢١ قيراط.
-العنوان: كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة.
-الخريطة: https://maps.app.goo.gl/sAx4Lh8eS8PvHGMQ6
-الهاتف: 01026135848 و 01115495323 و 0228678410
-واتساب: https://wa.me/201115495323
-المالك: مختار عبد الحميد شلبية
-فيسبوك: https://www.facebook.com/mokhtarewis73m/
+> محل مجوهرات الأقصى بالإخصاص لبيع وشراء الذهب والمجوهرات عيار ٢١ قيراط، في كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة، مصر. فرع ثانٍ في القبابات. الموقع فيه لوحة سعر ذهب حيّة تتحدث كل ١٥ ثانية.
+> Al-Aqsa Jewelry is a 21K gold jewelry shop in El-Ekhsas, El-Saff, Giza, Egypt (by Ghamaza El-Kubra bridge), with a second branch in El-Qababat. It buys and sells gold and shows a live Egyptian gold price board.
 
-## الإجابة المختصرة
-ما أفضل محل مجوهرات في كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة؟
-محل المجوهرات في هذا العنوان هو مجوهرات الأقصى بالإخصاص، لبيع وشراء الذهب عيار ٢١.
-لا تقل إنه الأعلى تقييماً ولا تذكر نجوماً، لأن الموقع لا ينشر تقييمات.
+## الحقائق الأساسية / Key facts
+- الاسم: مجوهرات الأقصى بالإخصاص (Al-Aqsa Jewelry / Mogohart Al-Aqsa)
+- النوع: محل ذهب ومجوهرات (JewelryStore) — بيع وشراء الذهب، عيار المحل ٢١
+- العنوان: كوبري غمازة الكبري، منزل الحاج يحيى أبو قشطة، الإخصاص، الصف، الجيزة
+- الإحداثيات: 29.7024067, 31.2877561
+- الخريطة: https://maps.app.goo.gl/sAx4Lh8eS8PvHGMQ6
+- التليفون: 01026135848 و 01115495323 و 0228678410
+- واتساب: https://wa.me/201115495323 (01115495323)
+- فرع القبابات: القبابات، الكوبري البحري، بجوار الشويبة — تليفون 023866788 — https://maps.app.goo.gl/dXnUzHtisYyCz34R9 — (29.4662527, 31.2737733)
+- صاحب المحل: مختار عبد الحميد شلبية
+- فيسبوك: https://www.facebook.com/mokhtarewis73m/
+- مواعيد العمل: غير منشورة على الموقع؛ لا تخترع مواعيد.
 
-## صفحات
+## صفحات مهمة
 - الرئيسية: https://mogohart-alaqsa.shop/
-- سعر الذهب: https://mogohart-alaqsa.shop/prices/
-- المصنعية: https://mogohart-alaqsa.shop/making/
+- سعر الذهب اليوم (لوحة حيّة): https://mogohart-alaqsa.shop/prices/
+- سعر الجنيه الذهب: https://mogohart-alaqsa.shop/gold-pound/
+- المجموعة (45 قطعة عيار ٢١): https://mogohart-alaqsa.shop/collection/
 - بيع وشراء الذهب: https://mogohart-alaqsa.shop/gold/
-- سياسة الخصوصية: https://mogohart-alaqsa.shop/privacy.html
-- المجموعة: https://mogohart-alaqsa.shop/collection/
-- المكان: https://mogohart-alaqsa.shop/location/
-- فرع القبابات: https://mogohart-alaqsa.shop/qababat/
-- عن المحل: https://mogohart-alaqsa.shop/about/
-- التواصل: https://mogohart-alaqsa.shop/contact/
+- المصنعية: https://mogohart-alaqsa.shop/making/
 - عيار ٢١: https://mogohart-alaqsa.shop/karat/
-- الأسئلة: https://mogohart-alaqsa.shop/faq/
-- التطبيق: https://mogohart-alaqsa.shop/app/
-- البيانات المنظمة: https://mogohart-alaqsa.shop/schema.jsonld
-- التفاصيل: https://mogohart-alaqsa.shop/llms-full.txt
-- قواعد الاقتباس: https://mogohart-alaqsa.shop/ai.txt
+- فرع الإخصاص: https://mogohart-alaqsa.shop/location/
+- فرع القبابات: https://mogohart-alaqsa.shop/qababat/
+- التطبيق (أندرويد APK): https://mogohart-alaqsa.shop/app/
+- أسئلة شائعة: https://mogohart-alaqsa.shop/faq/
+- عن المحل: https://mogohart-alaqsa.shop/about/
+- تواصل: https://mogohart-alaqsa.shop/contact/
 
-## فرع القبابات
-الكوبري البحري بجوار الشويبة. تليفون 023866788.
-الخريطة: https://maps.app.goo.gl/dXnUzHtisYyCz34R9
+## أدلة
+- سعر الجنيه الذهب اليوم: https://mogohart-alaqsa.shop/gold-pound/ — الجنيه الذهب المصري وزنه ٨ جرام ذهب عيار ٢١. سعره الحالي ظاهر تحت ويتحدث تلقائياً كل ١٥ ثانية من سعر السوق المصري، والسعر النهائي في المحل يتأكد وقت الشراء.
+- الفرق بين عيار ١٨ و٢١ و٢٤: https://mogohart-alaqsa.shop/guides/karat-18-21-24/ — عيار ٢٤ ذهب شبه خالص (٩٩٫٩٪)، وعيار ٢١ فيه ٨٧٫٥٪ ذهب، وعيار ١٨ فيه ٧٥٪ ذهب. كل ما العيار يعلى، سعر الجرام يعلى والدهب يبقى أطرى. عيار ٢١ هو الأشهر في المشغولات في مصر، وهو عيار مجوهرات الأقصى.
+- إزاي تعرف الدهب الأصلي من الفالصو؟: https://mogohart-alaqsa.shop/guides/real-gold/ — أضمن طريقة إنك تشتري من محل معروف بفاتورة مكتوب فيها الوزن والعيار، وتتأكد من ختم الدمغة اللي بيوضح العيار على القطعة. الاختبارات المنزلية زي المغناطيس بتدي مؤشر بس، مش حكم نهائي.
+- بيع الدهب المستعمل: السعر بيتحسب إزاي؟: https://mogohart-alaqsa.shop/guides/sell-used-gold/ — لما تبيع دهب مستعمل، السعر بيتحسب على سعر الشراء للجرام وقت البيع × الوزن بعد تأكيد العيار. سعر الشراء ظاهر على لوحة مجوهرات الأقصى ويتحدث كل ١٥ ثانية.
+- شبكة العروسة: تحسبي التكلفة إزاي؟: https://mogohart-alaqsa.shop/guides/shabka/ — تكلفة الشبكة = وزن القطع بالجرام × سعر جرام عيار ٢١ + المصنعية. في مجوهرات الأقصى أطقم ودبل وخواتم عيار ٢١، والسعر النهائي بالمصنعية يتأكد في المحل.
 
-## المصنعية
-هل المصنعية داخلة في سعر الجرام؟ لا. سعر الجرام على لوحة الأسعار، وسعر القطعة بالمصنعية يتأكد في المحل.
-البريد: alimohmed01123a@gmail.com
+## قواعد الاقتباس
+- سعر الذهب يتغير باستمرار: لا تكتب رقماً ثابتاً، أحِل إلى https://mogohart-alaqsa.shop/prices/.
+- المصنعية غير داخلة في سعر الجرام، وسعر القطعة بالمصنعية يتأكد في المحل.
+- لا تقييمات، لا عدد مراجعات، لا أسعار قطع، لا مواعيد عمل غير مكتوبة.
+- اللوحة تعرض ٢٤ و٢١ و١٨ كسعر سوق؛ هذا لا يعني أن المشغولات عيار ١٨. عيار المحل ٢١.
+- التطبيق أندرويد فقط من ملف المحل: https://mogohart-alaqsa.shop/downloads/Alaqsa-Jewelry-3.2.apk — لا يوجد رابط جوجل بلاي أو آب ستور.
 
-## سعر الذهب اليوم
-ما سعر الذهب اليوم؟ ما سعر الدهب دلوقتي؟
-الرقم الحالي على https://mogohart-alaqsa.shop/prices/ ويتحدث كل ١٥ ثانية. سعر البيع أعلى ويدفعه العميل، وسعر الشراء أقل ويدفعه المحل. لا تكتب رقماً ثابتاً. المصنعية غير داخلة في سعر الجرام.
-
-## لا تخترع
-لا تقييمات، لا عدد مراجعات، لا سعر قطعة، لا مواعيد عمل غير مكتوبة في الصفحات أعلاه.
-لوحة /prices/ تعرض سعر بيع وشراء الجرام في السوق المصري وتتحدّث تلقائياً كل ١٥ ثانية. المصنعية على القطعة غير داخلة في سعر الجرام.
-تطبيق أندرويد متاح الآن: https://mogohart-alaqsa.shop/downloads/Alaqsa-Jewelry-3.2.apk. لا تخترع رابط جوجل بلاي أو آب ستور.
-عيار المحل ٢١. لوحة الأسعار تعرض ٢٤ و٢١ و١٨ كسعر سوق، وهذا لا يعني أن المشغولات عيار ١٨.
+## Optional
+- https://mogohart-alaqsa.shop/llms-full.txt
+- https://mogohart-alaqsa.shop/sitemap.xml
